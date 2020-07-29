@@ -1,0 +1,315 @@
+body{
+    background: #f8f8f8;
+}
+#banner_zt{
+    padding:0 210px;
+    height:353px;
+    margin:10px 0;
+}
+.special_next,.special_prev{
+    width:30px;
+    height:30px;
+    line-height:30px;
+    text-align: center;
+    background-color: #fff;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+    background-image: none;
+    color: #b4d5c4;
+}
+.food_zt_list_new li{
+    margin-bottom:20px;
+    background-color: #fff;
+}
+.food_zt_list li .foo_zt_pic{
+    height:230px;
+    width:100%;
+    overflow: hidden;
+    position: relative;
+}
+.special_motel{
+    width:100%;
+    height:100%;
+    position: absolute;
+    left:0;
+    top:0;
+    background: rgba(0,0,0,.8);
+    display: none;
+}
+.special_motel span{
+    position: absolute;
+    width:138px;
+    height:38px;
+    line-height:38px;
+    text-align: center;
+    color: #fff;
+    border:1px solid #fff;
+    left:50%;
+    top:50%;
+    margin-left:-70px;
+    margin-top:-20px;
+}
+.food_zt_list li.hover .special_motel{
+    display: block;
+}
+
+/*专题详情页面*/
+#food_special{
+    background: #fff;
+}
+.food_special_xp .food_special_pic{
+    height:362px;
+    width:100%;
+    min-width:1200px;
+}
+.food_special_xp .food_special_pic img{
+    width:100%;
+}
+
+.theme_box{
+    margin-top:36px;
+    position: relative;
+    min-height:300px;
+}
+.theme_box .theme_box_bg{
+    width:1192px;
+    min-height:300px;
+    border:1px solid #dcdcdc;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    z-index:1;
+    background-color: #fff;
+}
+.theme_box .theme_box_main{
+    width:1192px;
+    z-index:2;
+    right:-2px;
+    top:-8px;
+    border:1px solid #DCDCDC;
+    min-height:300px;
+    position: absolute;
+}
+.theme_box_main_t{
+    padding:38px 0 14px 0;
+    position: relative;
+}
+.theme_box_main_t:before{
+    content: '';
+    width:0;
+    height:0;
+    border-width:8px;
+    border-style: solid;
+    position: absolute;
+    left:50%;
+    bottom:-8px;
+    margin-left:-8px;
+    border-color: #57340a transparent  transparent transparent;
+}
+.theme_box_main_t_icon{
+    width:58px;
+    height:58px;
+    margin:0 auto;
+}
+.theme_box_main_dec{
+    padding:0 30px;
+    text-align: center;
+    margin:20px auto;
+    font-size:18px;
+    line-height:32px;
+    word-break:break-all; /*支持IE，chrome，FF不支持*/
+    word-wrap:break-word;/*支持IE，chrome，FF*/
+    height: 128px;
+
+}
+.theme_list_tit{
+    padding:50px 0;
+    text-align: center;
+    font-size:30px;
+    line-height:36px;
+    position: relative;
+}
+.theme_list_tit .tit{
+    display: inline-block;
+    padding:0 27px 0 64px;
+    position: relative;
+}
+.theme_list_tit .tit_r{
+    display: inline-block;
+    position: relative;
+    padding:0 64px 0 27px;
+}
+.theme_list_tit .dot{
+    top:50%;
+    margin-top:-5px;
+    left:50%;
+    margin-left:-5px;
+    width:10px;
+    height:10px;
+    line-height:10px;
+    position: absolute;
+    background-color: #ecd1b4;
+}
+.theme_list_tit .tit:before,.theme_list_tit .tit_r:before{
+    content: '';
+    width:45px;
+    height:14px;
+    position: absolute;
+    top:50%;
+    margin-top:-7px;
+}
+.theme_list_tit .tit:before{
+    left:0;
+    background: url("../images/title_icon_l.png");
+}
+.theme_list_tit .tit_r:before{
+    right:0;
+    background: url("../images/title_icon_r.png");
+}
+.theme_list_con{
+    margin:0 -20px 0 0;
+}
+.theme_list_con li{
+    width:284px;
+    height:346px;
+    background-color: #fff;
+    float: left;
+    margin: 0 20px 20px 0;
+    -webkit-transition: all 0.3s ;
+    -moz-transition: all 0.3s ;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+
+}
+.theme_list_con li.hover{
+    -webkit-box-shadow: 0 0 30px rgba(0,0,0,.1);
+    -moz-box-shadow: 0 0 30px rgba(0,0,0,.1);
+    box-shadow: 0 0 30px rgba(0,0,0,.1);
+}
+.theme_list_con li img{
+    -webkit-transition: all 0.3s ;
+    -moz-transition: all 0.3s ;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+
+}
+.theme_list_con li.hover img{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+
+}
+.theme_list_con .theme_list_pic{
+    width:284px;
+    height:253px;
+    overflow: hidden;
+}
+.hot_food_comment_star img{
+    display: inline-block;
+    width:15px;
+    height:15px;
+}
+
+.theme_list_con li .theme_list_name{
+    padding:0 12px;
+    font-size:16px;
+    color: #2d2d2d;
+    line-height:40px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.theme_list_other_data{
+    padding:0 12px;
+    font-size:14px;
+    color: #919191;
+}
+
+.recommend_bg{
+    height:198px;
+    width:100%;
+    background: url("../images/tuijian.png") center center no-repeat;
+}
+.special_recommend_tit{
+    padding:42px 0 48px 0;
+    text-align: center;
+    position: relative;
+}
+.special_recommend_tit:before{
+    content: '';
+    width:100%;
+    border-bottom:1px solid #dcdcdc;
+    position: absolute;
+    top:50%;
+    left:0;
+}
+.special_recommend_tit span{
+    padding:0 20px;
+    background-color: #fff;
+    position: absolute;
+    left:50%;
+    width:88px;
+    top:50%;
+    height:36px;
+    line-height:36px;
+    margin-top:-18px;
+    margin-left:-54px;
+}
+.special_recommend_list{
+    margin:0 -18px 0 0;
+    padding-bottom:20px;
+}
+.special_recommend_list li{
+    width:286px;
+    height:188px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    margin:0 18px 18px 0;
+}
+.special_recommend_list li .recommend_list_pic{
+    width:286px;
+    height:188px;
+}
+.special_recommend_list li .recommend_list_dec{
+    width:100%;
+    height:36px;
+    line-height:36px;
+    padding:0 24px 0;
+    position: absolute;
+    bottom:-36px;
+    left:0;
+    background: rgba(255,255,255,0.5);
+    font-size:16px;
+    color: #2d2d2d;
+    -webkit-transition: all 0.3s ;
+    -moz-transition: all 0.3s ;
+    -ms-transition: all 0.3s ;
+    -o-transition: all 0.3s ;
+    transition: all 0.3s ;
+}
+.special_recommend_list li.hover .recommend_list_dec{
+    bottom:0;
+
+}
+.special_recommend_list li img{
+    -webkit-transition: all 0.3s ;
+    -moz-transition: all 0.3s ;
+    -ms-transition: all 0.3s ;
+    -o-transition: all 0.3s ;
+    transition: all 0.3s ;
+}
+.special_recommend_list li.hover img{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+
+}

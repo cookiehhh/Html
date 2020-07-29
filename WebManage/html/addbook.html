@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/min.css">
+	</head>
+
+	<body>
+		<header>
+			<div>
+				<h1>后台管理系统</h1>
+				<nav>
+					<ul>
+						<li>欢迎管理员:<strong>admin</strong></li>
+						<li>
+							<a href="javascript:void(0);" onclick="logout()">退出登录</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<article>
+				<div class="panel">
+					<div class="panel-heading">
+						<div class="panel-title">图书添加</div>
+					</div>
+					<div class="panel-body">
+						<form action="" method="post" class="basic-grey">
+							<label>
+								<span>姓名 :</span>
+								<input id="name" type="text" name="name" placeholder="请填写姓名" />
+							</label>
+							<label>
+								<span>姓名 :</span>
+								<input id="name" type="text" name="name" placeholder="请填写姓名" />
+							</label>
+							<label>
+								<span>姓名 :</span>
+								<input id="name" type="text" name="name" placeholder="请填写姓名" />
+							</label>
+							<label>
+								<span>姓名 :</span>
+								<input id="name" type="text" name="name" placeholder="请填写姓名" />
+							</label>
+							<label>
+								<span>姓名 :</span>
+								<input id="name" type="text" name="name" placeholder="请填写姓名" />
+							</label>
+							<label>
+								<span>&nbsp;</span>
+								<input type="button" class="button" value="Send" />
+							</label>
+						</form>
+
+					</div>
+				</div>
+				<footer>
+					<p>
+						<a href="#">图书管理</a> ©版权所有</p>
+				</footer>
+			</article>
+			<aside>
+				<nav>
+					<ul>
+						<li>导航列表</li>
+						<li>
+							<a href="#" target="main" class="active">图书管理</a>
+						</li>
+						<li>
+							<a href="#" target="main">类别管理</a>
+						</li>
+						<li>
+							<a href="#" target="main">用户管理</a>
+						</li>
+						<li>
+							<a href="#" target="main">评论管理</a>
+						</li>
+						<li>
+							<a href="#" target="main">其它管理</a>
+						</li>
+					</ul>
+				</nav>
+			</aside>
+		</main>
+	</body>
+
+</html>
+<script>
+	function logout() {
+		if(window.confirm('是否退出?')) {
+			window.location.href = 'login.html';
+		} else {
+			return false;
+		}
+	}
+</script>

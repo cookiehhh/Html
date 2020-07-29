@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>实现带左右按钮控制焦点图片切换</title>
+<style type="text/css">
+*{margin:0;padding:0;}
+ul,li{list-style:none;}
+img{border:0;}
+.wrapper{
+	width: 800px;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+#focus{
+	width: 800px;
+	height: 280px;
+	overflow: hidden;
+	position: relative;
+}
+#focus ul{
+	height: 380px;
+	position: absolute;
+}
+#focus ul li{
+	float: left;
+	width: 800px;
+	height: 280px;
+	overflow: hidden;
+	position: relative;
+	background: #000;
+}
+#focus ul li div{
+	position: absolute;
+	overflow: hidden;
+}
+#focus .preBtn{
+	width: 45px;
+	height: 100px;	
+	left: 0;
+	top:90px;
+	background:url(images/spirte.png) no-repeat 0 0;
+	background-color:#000;
+	cursor: pointer;
+	opacity:0.4;
+	filter:alpha(opacity=40);
+}
+#focus .nextBtn{
+	width: 45px;
+	height: 100px;
+	right:0px;
+	top:90px;
+	background:url(images/spirte.png) no-repeat right top;
+	background-color:#000;
+	cursor: pointer;	
+	opacity:0.4;
+	filter:alpha(opacity=40);}
+
+</style>
+
+</head>
+
+<body>
+<div class="wrapper">
+  <div id="focus">
+    <ul>
+      <li><a href="#" target="_blank"><img src="images/01.jpg" alt="" id="pic"/></a>
+      <div class="preBtn" onclick="showPre()"></div>
+      <div class="nextBtn" onclick="showNext()"></div> 
+      </li>      
+    </ul>     
+  </div>
+</div>
+</body>
+</html>

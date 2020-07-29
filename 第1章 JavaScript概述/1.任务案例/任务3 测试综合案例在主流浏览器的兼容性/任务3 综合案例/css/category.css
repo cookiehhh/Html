@@ -1,0 +1,307 @@
+/* CSS Document 
+   category css
+   author lyb
+*/
+#category-main{
+	width:960px;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:115px;
+	*top:150px;
+	}
+	
+/*************************/
+#category-main #category-main-header{
+	width:960px;
+	height:50px;
+	margin-bottom:10px;
+	background-color:#444;
+	border-radius:5px;
+	}
+	#category-main-header .cmhtitle{
+		width:150px;
+		height:50px;
+		border-top-left-radius:5px;
+		border-bottom-left-radius:5px;
+		background-color:#09F;
+		float:left;
+		}
+	#category-main-header .cmhsearch{
+		width:150px;
+		height:50px;
+		float:right;
+		padding-right:30px;
+		}
+	#category-main-header .cmhsearch input{
+		width:145px;
+		height:20px;
+		border:1px solid #DDD;
+		border-radius:15px;
+		line-height:20px;
+		margin-top:15px;
+		padding-left:5px;
+		color:#888;
+		font:"黑体";
+		transition:all ease-in-out 0.6;
+		-moz-transition:all ease-in-out 0.6;
+		-o-transition:all ease-in-out 0.6;
+		-webkit-transition:all ease-in-out 0.6;
+		}
+	#category-main-header .cmhsearch input:hover{
+		width:165px;
+		}
+		
+/*************************/	
+#category-main #category-main-left{
+	width:655px;
+	height:auto;
+	float:left;
+	margin-right:15px;
+	}
+	#category-main-left .cmllayout{
+		width:653px;
+		height:220px;
+		margin-top:5px;
+		margin-bottom:10px;
+		border-bottom:3px solid #DDD;
+		}
+	#category-main-left .cmllayout .cmltitle{
+		width:653px;
+		height:40px;
+		margin-bottom:10px;
+		}
+	#category-main-left .cmllayout .cmltitle .cmldatebg{
+		width:45px;
+		height:40px;
+		background-color:#BBB;
+		float:left;
+		font-family:Arial, Helvetica, sans-serif;
+		text-align:center;
+		border-radius:8px 8px 8px 8px;
+		}
+	#category-main-left .cmllayout .cmltitle .cmldatebg .cmlyear{
+		width:45px;
+		height:20px;
+		line-height:20px;
+		font-size:15px;
+		color:#FFF;
+		font-weight:bold;
+		}
+	#category-main-left .cmllayout .cmltitle .cmldatebg .cmlday{
+		width:45px;
+		height:20px;
+		line-height:20px;
+		font-size:12px;
+		color:#555;
+		font-weight:600;
+		}
+	#category-main-left .cmllayout .cmltitle .cmltitlefont{
+		width:600;
+		height:40px;
+		line-height:40px;
+		padding-left:10px;
+		font-family:Arial, Helvetica, sans-serif;
+		font-family:"微软雅黑";
+		font-size:20px;
+		font-weight:600;
+		float:left;
+		color:#555;
+		}
+	#category-main-left .cmllayout .cmltitle .cmltitlefont a{
+		color:#555;
+		}
+	#category-main-left .cmllayout .cmltitle .cmltitlefont a:hover{
+		color:#09F;
+		}
+	/******/
+	#category-main-left .cmllayout .cmlcontent{
+		width:653px;
+		height:150px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+	#category-main-left .cmllayout .cmlcontent .cmlcimg{
+		width:180px;
+		height:150px;
+		margin-right:10px;
+		float:left;
+		background-color:#09F;
+		}
+	#category-main-left .cmllayout .cmlcontent .cmlccont{
+		width:450px;
+		height:98px;
+		float:left;
+		margin-bottom:5px;
+		margin-left:5px;
+		overflow:hidden;
+		text-overflow:ellipsis;
+		font-family:"微软雅黑";
+		font-size:14px;
+		line-height:25px;
+		}
+	#category-main-left .cmllayout .cmlcontent .cmlcconfig{
+		width:460px;
+		height:14px;
+		float:left;
+		font-family:Arial, Helvetica, sans-serif;
+		margin-top:5px;
+		}
+	#category-main-left .cmllayout .cmlcontent .cmlcconfig p{
+		font-size:12px;
+		color:#888;
+		float:right;
+		}
+	#category-main-left .cmllayout .cmlcontent .cmlcconfig .cmlccTag{
+		font-size:14px;
+		font-weight:600;
+		color:#888;
+		float:right;
+		margin-top:5px;
+		}
+	/***分页***/
+	#category-main-left .cmlpage{
+		width:653px;
+		height:50px;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:14px;
+		color:#EEE;
+		text-align:center;
+		margin-top:5px;
+		margin-bottom:30px;
+		}
+	#category-main-left .cmlpage li{
+		float:left;
+		}
+	#category-main-left .cmlpage .cmlpbg{
+		width:30px;
+		height:30px;
+		line-height:30px;
+		background-color:#222;
+		border-radius:5px;
+		float:left;
+		margin-left:10px;
+		margin-right:10px;
+		transition:all ease-in-out 0.5s;
+		cursor:pointer;
+		}
+	#category-main-left .cmlpage .cmlpbg:hover{
+		border-radius:15px;
+		}
+	#category-main-left .cmlpage input{
+		width:35px;
+		height:25px;
+		line-height:25px;
+		border:1px solid #BBB;
+		}
+	
+		
+/*************************/
+#category-main #category-main-right{
+	width:290px;
+	height:auto;
+	float:left;
+	}
+	#category-main-right .cmrlayout{
+		width:288px;
+		height:auto;
+		margin-top:5px;
+		margin-bottom:10px;
+		border:1px dashed #DDDDDD;
+		}
+	#category-main-right .cmrlayout .cmrttitle{
+		width:280px;
+		height:20px;
+		padding-left:8px;
+		padding-top:4px;
+		}
+	#category-main-right .cmrlayout .cmrttitle a{
+		margin-left:10px;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:14px;
+		color:#555;
+		font-weight:600;
+		}
+	#category-main-right .cmrlayout .cmrtcont{
+		width:280px;
+		height:auto;
+		padding-left:8px;
+		line-height:25px;
+		}
+	#category-main-right .cmrlayout .cmrtcont p{
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:14px;
+		text-indent:4ex;
+		color:#555;
+		}
+	/******/
+	#category-main-right .cmrlayout .cmrhtitle{
+		width:280px;
+		height:20px;
+		padding-left:8px;
+		padding-top:4px;
+		}
+	#category-main-right .cmrlayout .cmrhtitle a{
+		margin-left:10px;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:14px;
+		color:#555;
+		font-weight:600;
+		}
+	#category-main-right .cmrlayout .cmrhcont{
+		width:280px;
+		height:auto;
+		padding-left:8px;
+		padding-bottom:10px;
+		}
+	#category-main-right .cmrlayout .cmrhcont ul li{
+		padding-top:8px;
+		width:250px;
+		height:18px;
+		overflow:hidden;
+		text-overflow:ellipsis;
+		white-space:nowrap;
+		}
+	#category-main-right .cmrlayout .cmrhcont ul li a{
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:12px;
+		color:#555;
+		padding-left:5px;
+		}
+	#category-main-right .cmrlayout .cmrhcont ul li a:hover{
+		color:#09F;
+		}
+	#category-main-right .cmrlayout .cmrhcont .chartbg_a{
+		width:18px;
+		height:18px;
+		background-color:#ffb400;
+		color:#DDD;
+		float:left;
+		text-align:center;
+		line-height:18px;
+		font-size:12px;
+		}
+	#category-main-right .cmrlayout .cmrhcont .chartbg_b{
+		width:18px;
+		height:18px;
+		background-color:#555;
+		color:#DDD;
+		float:left;
+		text-align:center;
+		line-height:18px;
+		font-size:12px;
+		}
+	/******/
+	#category-main-right .cmrlayout .cmrtagtitle{
+		width:280px;
+		height:20px;
+		padding-left:8px;
+		padding-top:4px;
+		}
+	#category-main-right .cmrlayout .cmrtagtitle a{
+		margin-left:10px;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:14px;
+		color:#555;
+		font-weight:600;
+		}

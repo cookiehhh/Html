@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户列表-页面演示 zui-admin</title>
+    <!-- zui css -->
+    <!-- app css -->
+    <link rel="stylesheet" href="css/left.css">
+    <!-- jquery js -->
+    <script src="dist/lib/jquery/jquery.js"></script>
+    
+</head>
+<body>
+    <div class="wrapper">
+        <header class="main-header">
+            <nav class="navbar navbar-fixed-top bg-primary">
+                <div class="navbar-header">
+                    <a class="navbar-toggle" href="#" data-toggle="collapse" data-target=".navbar-collapse"><i class="icon icon-th-large"></i></a>
+                    <a class="sidebar-toggle" href="#" data-toggle="push-menu"><i class="icon icon-bars"></i></a>
+                    <a class="navbar-brand" href="#">
+                        <span class="logo">ZUIAdmin</span>
+                        <span class="logo-mini">ZA</span> 
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <div class="container-fluid">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#" data-toggle="push-menu"><i class="icon icon-bars"></i></a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" data-toggle="dropdown"><i class="icon icon-user"></i> 管理员 <span class="caret"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <aside class="main-sidebar">
+            <section class="sidebar">
+                <ul class="sidebar-menu" data-widget="tree">
+                    <li class="header">主要菜单</li>
+                    <li><a href="layout.html"><i class="icon icon-circle-blank"></i> 空白页</a></li>
+                    <li><a href="login.html"><i class="icon icon-circle-blank"></i> 登录</a></li>
+                    <li><a href="error-404.html"><i class="icon icon-circle-blank"></i> 404页</a></li>
+                    <li><a href="config.html"><i class="icon icon-circle-blank"></i> 系统设置</a></li>
+                    <li class="active"><a href="list.html"><i class="icon icon-circle-blank"></i> 用户列表</a></li>
+                </ul>
+            </section>
+        </aside>
+        <div class="content-wrapper">
+            <div class="content-header">
+                <ul class="breadcrumb">
+                    <li><a href="#"><i class="icon icon-home"></i></a></li>
+                    <li><a href="#">页面演示</a></li>
+                    <li class="active">用户列表</li>
+                </ul>
+            </div>
+            <div class="content-body">
+                <div class="container-fluid">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <div class="panel-title">用户列表</div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-tools" style="margin-bottom: 15px;">
+                                <div class="pull-right" style="width: 250px;">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="关键字">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default" type="button">搜索</button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="tools-group">
+                                    <a href="#" class="btn btn-primary"><i class="icon icon-plus-sign"></i> 新增</a>
+                                </div>
+                            </div>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th width="30">
+                                            <input type="checkbox">
+                                        </th>
+                                        <th width="50">ID</th>
+                                        <th>用户名</th>
+                                        <th>昵称</th>
+                                        <th>手机号</th>
+                                        <th>邮箱</th>
+                                        <th>创建时间</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>1</td>
+                                        <td>mofer</td>
+                                        <td>莫非</td>
+                                        <td>151xxxx1234</td>
+                                        <td>205155513@qq.com</td>
+                                        <td>2017-11-10 10:20</td>
+                                        <td>
+                                            <a href="#" class="btn btn-xs btn-primary">编辑</a>
+                                            <a href="#" class="btn btn-xs btn-danger">删除</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+
+    <!-- zui js -->
+    <script src="dist/js/zui.min.js"></script>
+    <!-- app js -->
+    <script src="js/app.js"></script>
+</body>
+</html>

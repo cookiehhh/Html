@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>IT.home 购物车</title>
+<link rel="stylesheet" type="text/css" href="css/login-reg.css" />
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<link href="css/car.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery_1.7.2.js"></script>
+<script type="text/javascript" src="js/car.js"></script>
+</head>
+
+<body>
+<div id="log-header">
+	<div id="log-header-content">
+		<img src="images/logo.png" style=" padding-top:5px; float:left;"> 
+        <div style="width:2px; height:30px; background-color:#DDD; float:left; margin-left:20px; margin-right:20px; margin-top:10px;"></div>
+        <div class="p1">购物车</div>
+        <div style="float:right; width:80px; height:50px;"><a href="index.html"><img src="images/home-head-btn.png" style="border:none;"></a></div>
+    </div>
+    
+</div><!--header END--->
+<div style="width:980px; margin:0 auto;">
+<div id="category-main-right" style="float:right; margin-top:30px;">
+        <div class="cmrlayout">
+            <div class="cmrttitle">
+                <img src="images/tips.png" class="float-left">
+                <a class="float-left">温馨提示</a>
+            </div>
+            <div class="cmrtcont">
+                <p>为了得到更好的浏览体验，请使用webkit、moz等内核的浏览器，如Chrome，Firefox等</p>
+            </div>
+        </div><!--layout END-->
+        <div class="cmrlayout">
+            <img src="images/banner.png">
+        </div>
+        <div class="cmrlayout">
+            <div class="cmrhtitle">
+                <img src="images/hot.png" class="float-left">
+                <a class="float-left">频道热点</a>
+            </div>
+            <div class="cmrhcont">
+                <ul>
+                    <li><div class="chartbg_a">1</div><a href="#">全方位战略部署！宏碁E1-472G笔记本评测</a></li>
+                    <li><div class="chartbg_a">2</div><a href="#">小钱也能玩FIFA14!3K内酷睿芯独显本推荐</a></li>
+                    <li><div class="chartbg_a">3</div><a href="#">玩儿的就是轻薄! 宏碁V5-473G笔记本首测</a></li>
+                    <li><div class="chartbg_b">4</div><a href="#">超越ThinkPad！联想昭阳K2450商用本首测</a></li>
+                    <li><div class="chartbg_b">5</div><a href="#">华硕加大自主品牌投入!或放弃代工Nexus7</a></li>
+                    <li><div class="chartbg_b">6</div><a href="#">配Haswell!惠普二代Chromebook14售300刀</a></li>
+                    <li><div class="chartbg_b">7</div><a href="#">喜新厌旧更新潮！新HSW平台一体机大搜罗</a></li>
+                    <li><div class="chartbg_b">8</div><a href="#"> 创意无极限，生活乐无边--联想YOGA 13 体验之六道杠戏弄屌丝男</a></li>
+                    <li><div class="chartbg_b">9</div><a href="#">品这一支“拉菲” 海尔Lafite超极本首测</a></li>
+                    <li><div class="chartbg_b">10</div><a href="#">超越ThinkPad！联想昭阳K2450商用本首测</a></li>
+                    <li><div class="chartbg_b">11</div><a href="#">华硕加大自主品牌投入!或放弃代工Nexus7</a></li>
+                    <li><div class="chartbg_b">12</div><a href="#">配Haswell!惠普二代Chromebook14售300刀</a></li>
+                </ul>
+            </div>
+        </div><!--layout END-->
+    </div>
+    <div id="car">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr class="car-th">
+            	<th width="30">
+                	<input id="checkAll" type="checkbox" value="" />
+                </th>
+            	<th width="40">
+                	全选
+                </th>
+                <th>略缩图</th>
+                <th>商品</th>
+                <th>单价</th>
+                <th>数量</th>
+                <th>小计</th>
+                <th>操作</th>
+            </tr>
+            <tr class="car-footer">
+            	<td align="center" width="" colspan="2">
+                	<input name="check" type="checkbox" value="" />
+                </td>
+                <td class="car-img" width="180">
+                    <img src="images/test/650_350-a.png" />
+                </td>
+                <td class="car-title font-yahei">
+                    <a href="#">海尔Lafite超极本</a>
+                </td>
+                <td width="90" align="center">
+                    1200.00
+                </td>
+                <td class="car-num" width="90" align="center">
+                    <a name="subNum" href="javascript:void(0)" style="margin-left:13px;">-</a>
+                    <input name="num" type="text" value="1" class="car-num-text" />
+                    <a name="addNum" href="javascript:void(0)">+</a>
+                </td>
+                <td class="car-money" align="center" width="100">
+                    1200.00
+                </td>
+                <td width="90" align="center">
+                    <a name="del" href="#">删除</a>
+                </td>
+            </tr>
+			
+			<tr class="car-footer">
+            	<td align="center" width="" colspan="2">
+                	<input name="check" type="checkbox" value="" />
+                </td>
+                <td class="car-img" width="180">
+                    <img src="images/test/650_350-b.png" />
+                </td>
+                <td class="car-title font-yahei">
+                    <a href="#">海尔Lafite超极本</a>
+                </td>
+                <td width="90" align="center">
+                    1000.00
+                </td>
+                <td class="car-num" width="90" align="center">
+                    <a name="subNum" href="javascript:void(0)" style="margin-left:13px;">-</a>
+                    <input name="num" type="text" value="1" class="car-num-text" />
+                    <a name="addNum" href="javascript:void(0)">+</a>
+                </td>
+                <td class="car-money" align="center" width="100">
+                    1000.00
+                </td>
+                <td width="90" align="center">
+                    <a name="del" href="#">删除</a>
+                </td>
+            </tr>
+			
+			<tr class="car-footer">
+            	<td align="center" width="" colspan="2">
+                	<input name="check" type="checkbox" value="" />
+                </td>
+                <td class="car-img" width="180">
+                    <img src="images/test/650_350-c.png" />
+                </td>
+                <td class="car-title font-yahei">
+                    <a href="#">海尔Lafite超极本</a>
+                </td>
+                <td width="90" align="center">
+                    1200.00
+                </td>
+                <td class="car-num" width="90" align="center">
+                    <a name="subNum" href="javascript:void(0)" style="margin-left:13px;">-</a>
+                    <input name="num" type="text" value="1" class="car-num-text" />
+                    <a name="addNum" href="javascript:void(0)">+</a>
+                </td>
+                <td class="car-money" align="center" width="100">
+                    1200.00
+                </td>
+                <td width="90" align="center">
+                    <a name="del" href="#">删除</a>
+                </td>
+            </tr>
+        </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" class="car-buy">
+          <tr>
+            <td align="center" width="30">
+            	<input id="checkAll2" type="checkbox" value="" /></td>
+            <td align="center" width="50">全选</td>
+            <td align="center" width="50"></td>
+            <td align="right" style="font-size:14px;">已选商品<span id="num" style="color:#F40;">0</span>件</td>
+            <td align="center" width="150" style="font-size:14px;">合计：<span style="font-size:16px; color:#999;">￥<strong id="total" style="color:#F40;">0.00</strong></span></td>
+            <td align="center" width="118">
+            	<a href="#" class="car-buy-bt">结&nbsp;&nbsp;算</a>
+            </td>
+          </tr>
+        </table>
+
+  </div>
+    <div style="clear:both;"></div>
+</div>
+<div id="log-reg-footer">
+	<div id="footer">
+    	<div class="hr"></div>
+          <div>
+            <p>
+                <a href="#">隐私条款</a>&nbsp;&nbsp;
+                <a href="#">使用帮助</a>&nbsp;&nbsp;
+                <a href="#">用户反馈</a>&nbsp;&nbsp;
+                <a href="#">加入我们</a>&nbsp;&nbsp;
+                <a href="#">友情链接</a>
+            </p>
+            <p>
+              Copyright © 2013  <a href="#">IT.Home</a> All rights reserved&nbsp;&nbsp;&nbsp;
+            </p>
+            <div>
+          </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

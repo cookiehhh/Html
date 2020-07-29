@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//Dtd XHTML 1.0 transitional//EN" "http://www.w3.org/tr/xhtml1/Dtd/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>改善简易计算器</title>
+<script type="text/javascript">
+
+function compute(obj){  //obj 为形式参数，它代表运算符号
+	var num1,num2;
+	num1 = parseFloat(document.myform.txtNum1.value);
+	num2 = parseFloat(document.myform.txtNum2.value);
+	 switch(obj)
+	  {
+		  case "+":
+		  	document.myform.txtResult.value = num1 + num2 ;
+			break;
+		  case "-":
+		  	document.myform.txtResult.value = num1 - num2 ;
+			break;
+		  case "*":
+		    document.myform.txtResult.value = num1 * num2 ;
+			break;
+		  case "/":
+		    document.myform.txtResult.value = num1 / num2 ;
+			break;
+	  }
+	}
+
+</script>
+</head>
+
+<body>
+ <form action="" method="post"  id="myform" name="myform">
+<table border="0" >
+  <tr>
+    <td><img src="images/shop.gif" width="54" height="54"></td>
+<td colspan="3"><H3>改善简易计算器</H3></td>
+  </tr>
+  <tr>
+    <td>第一个数</td>
+    <td colspan="3"><INPUT name="txtNum1" type="text"  id="txtNum1" size="25"></td>
+  </tr>
+  <tr  >
+    <td>第二个数</td>
+    <td colspan="3"><INPUT name="txtNum2" type="text"  id="txtNum2" size="25"></td>
+  </tr>
+  <tr>
+    <td><INPUT name="addButton2" type="button" id="addButton2" value="  ＋  " onClick="compute('+')"></td>
+    <td><INPUT name="subButton2" type="button" id="subButton2" value="  －  " onClick="compute('-')"></td>
+    <td><INPUT name="mulButton2" type="button" id="mulButton2" value="  ×  " onClick="compute('*')"></td>
+    <td><INPUT name="divButton2" type="button" id="divButton2" value="  ÷  " onClick="compute('/')"></td>
+  </tr>
+  <tr>
+    <td>计算结果</td>
+    <td colspan="3"><INPUT name="txtResult" type="text"  id="txtResult" size="25"></td>
+  </tr>
+</table>
+</form>
+</body>
+</html>

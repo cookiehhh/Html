@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>测试用</title>
+		<style type="text/css">
+			p{text-decoration: blink;}
+		</style>
+		<script type="text/javascript">
+			function changeColor(color){
+				var table = document.getElementById("colorTable");
+				table.bgColor = color;
+			}
+		</script>
+	</head>
+	<body>
+		选取颜色：
+		<table border="1">
+			<tr height="24">
+				<td bgcolor="red" width="24" onclick="changeColor('red')"></td>
+				<td bgcolor="orange" width="24" onclick="changeColor('orange')"></td>
+				<td bgcolor="yellow" width="24" onclick="changeColor('yellow')"></td>
+				<td bgcolor="green" width="24" onclick="changeColor('green')"></td>
+				<td bgcolor="black" width="24" onclick="changeColor('black')"></td>
+				<td bgcolor="blue" width="24" onclick="changeColor('blue')"></td>
+				<td bgcolor="purple" width="24" onclick="changeColor('purple')"></td>
+			</tr>			
+		</table>
+		<table id="colorTable" border="1" height="168" width="168">
+			<tr><td></td></tr>
+		</table>
+        <p></p>
+	</body>
+</html>

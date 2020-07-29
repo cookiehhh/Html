@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>条件语句</title>
+<script type="text/javascript">
+document.write("<h2>成绩评定</h2>");
+var leval, score=prompt("请输入你的成绩：","");
+//if(score<60)
+//	leval="不及格";
+//else if(score<70)
+//		leval="及格";
+//	else if(score<80)
+//		leval="中";
+//	else if(score<90)
+//		leval="良";
+//	else
+//		leval="优";
+switch(parseInt(score/10))
+{
+	case 9:
+	case 10:
+		leval="优";
+		break;
+	case 8:
+		leval="良";
+		break;
+	case 7:
+		leval="中";
+		break;
+	case 6:
+		leval="及格";
+		break;
+	case 5:
+	case 4:
+	case 3:
+	case 2:
+	case 1:
+	case 0:
+		leval="不及格";
+		break;
+	default:
+		alert("输入信息有误！");
+		leval="错误！";
+		break;
+	
+}
+	document.write("你的成绩等级是："+leval);
+</script>
+</head>
+
+<body>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/min.css">
+	</head>
+
+	<body>
+		<!--顶部信息区-->
+		<header>
+			<div>
+				<h1>后台管理系统</h1>
+				<nav>
+					<ul>
+						<li>欢迎管理员:<strong>admin</strong></li>
+						<li>
+							<a href="#" target="main">修改密码</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" onclick="logout()">退出登录</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<!--圣杯二列布局-->
+		<main>
+			<!--主体内联框架区-->
+			<article>
+				<!--<iframe src="#" name="main"></iframe>-->
+				<footer>
+					<p>
+						<a href="#">图书管理</a> ©版权所有</p>
+				</footer>
+			</article>
+			<!--左侧导航区-->
+			<aside>
+				<nav>
+					<ul>
+						<li>导航列表</li>
+						<li>
+							<a href="#" target="main" class="active">图书管理</a>
+						</li>
+						<li>
+							<a href="#" target="main">类别管理</a>
+						</li>
+						<li>
+							<a href="#" target="main">用户管理</a>
+						</li>
+						<li>
+							<a href="#" target="main">评论管理</a>
+						</li>
+						<li>
+							<a href="#" target="main">其它管理</a>
+						</li>
+					</ul>
+				</nav>
+			</aside>
+		</main>
+	</body>
+
+</html>
+<script>
+	function logout() {
+		if(window.confirm('是否退出?')) {
+			window.location.href = 'login.html';
+		} else {
+			return false;
+		}
+	}
+</script>

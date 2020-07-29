@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>新浪免费邮箱登录</title>
+<style type="text/css">
+body{
+	margin:0;
+	padding:0;
+	font-size:12px;
+	line-height:25px;
+	}
+#myTable{
+	width:283px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:0;
+	margin-bottom:0;
+	border:solid 1px #c1c1c1;
+	background-color:#f9f9f9;
+	}	
+.left{
+	width:100px;
+	text-align:right;
+	}
+.txt{
+	border:solid 1px #cccccc;
+	width:100px;
+	height:16px;
+	}
+.txtChange{
+	border:solid 1px #00a8a8;
+	width:100px;
+	height:16px;
+	}
+.overStyle{
+   background-image: url(images/btn1.jpg);
+   background-repeat:no-repeat;
+	color:#489379;
+	width:102px;
+	height:24px;
+	text-align:center;
+	border:0;
+	font-weight:bold;
+	cursor:pointer;
+}
+ /*鼠标移出时调用的样式*/
+.outStyle{
+   background-image:url(images/btn2.jpg);
+   background-repeat:no-repeat;
+	color:#489379;
+	width:102px;
+	height:24px;
+	text-align:center;
+	border:0;
+	font-weight:bold;
+	cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+<table id="myTable" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td colspan="2"><img src="images/top.jpg" /></td>
+  </tr>
+  <form action="" method="post" name="myform">
+  <tr>
+    <td class="left">邮箱名：</td>
+    <td><input id="email" type="text" class="txt" onmouseover="this.className='txtChange'"  onmouseout="this.className='txt'" /> @sina.com</td>
+  </tr>
+  <tr>
+    <td class="left">密码：</td>
+    <td><input id="pwd" type="password"  class="txt" onmouseover="this.className='txtChange'"  onmouseout="this.className='txt'"/></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td style="height:35px;"><input name="btn" type="submit" value="登录" class="outStyle"  onmouseover="this.className='overStyle'"  onmouseout="this.className='outStyle'" /></td>
+  </tr>
+  </form>
+</table>
+
+</body>
+</html>

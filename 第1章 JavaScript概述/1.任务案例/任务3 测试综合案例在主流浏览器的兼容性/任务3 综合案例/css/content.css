@@ -1,0 +1,536 @@
+/* CSS Document */
+#main-content{
+	width:960px;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:115px;
+	*top:150px;
+	}
+#main-img-news{
+	width:960px;
+	height:370px;
+	float:left;
+	}
+#main-img-news #main-img-border{
+	width:650px;
+	height:350px;
+	background-color:#777;
+	overflow:hidden;
+	float:left;
+	border:none;
+	position:relative; /*焦点图必要的样式*/
+	}
+#main-img-news .btn-next{
+	width:50px;
+	height:100px;
+	top:125px;
+	right:0px;
+	position:absolute;
+	background-image:url(../images/btn-next.png);
+	cursor:pointer;
+	}
+#main-img-news .btn-pre{
+	width:50px;
+	height:100px;
+	top:125px;
+	left:0px;
+	position:absolute;
+	background-image:url(../images/btn-pre.png);
+	cursor:pointer;
+	}
+#main-img-news #main-img-border ul{
+	position:absolute; /*焦点图必要的样式*/
+	}
+#main-img-news #main-img-border ul,li{
+	list-style:none outside none;
+	border:none;
+	}
+#main-img-news #main-img-border li{
+	width:650px;
+	height:350px;
+	background-color:#777;
+	border:none;
+	float:left; /*焦点图必要的样式*/
+	}
+#main-img-news #main-img-border a{
+	border:none;
+	}
+	
+/***精选栏目**/
+#main-img-news #main-news{
+	width:280px;
+	height:350px;
+	margin-left:28px;
+	background-color:#eee;
+	border:1px solid #DDD;
+	float:left;
+	}
+#main-img-news #main-news #main-news-title{
+	width:280px;
+	height:50px;
+	font-family:"微软雅黑";
+	color:#06799f;
+	font-weight:bolder;
+	font-size:16px;
+	padding-top:10px;
+	}
+#main-img-news #main-news #main-news-content{
+	width:270px;
+	height:55px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:5px;
+	border-bottom:1px dashed #DDDDDD;
+	}
+#main-img-news #main-news #main-news-content #img{
+	width:70px;
+	height:45px;
+	float:left;
+	background-color:#010;
+	}
+#main-img-news #main-news #main-news-content #content{
+	width:195px;
+	height:45px;
+	padding-left:5px;
+	float:left;
+	}
+#main-img-news #main-news #main-news-content #content a{
+	font-size:14px;
+	color:#444;
+	font-weight:300;
+	}
+#main-img-news #main-news #main-news-content #content a:hover{
+	color:#F00;}
+/*** END**/
+
+#content-left{
+	width:760px;
+	height:auto;
+	float:left;}
+#content-border-left{
+	width:360px;
+	height:400px;
+	margin-right:20px;
+	margin-bottom:10px;
+	float:left;
+/*	background-color:#777;*/
+	}
+/***搜索部分**/
+#content-border-left #search{
+	width:360px;
+	height:70px;
+	}
+
+#content-border-left #search #search-border{
+	width:352px;
+	height:45px;
+	border-radius:5px;
+	border: 4px solid #F90;
+	}
+#content-border-left #search #search-border select{
+	width:60px;
+	height:45px;
+	background-color:#F90;
+	border:0px;
+	color:#EEE;
+	font-weight:600;
+	float:left;
+	line-height:45px;
+	}
+#content-border-left #search #search-border select option{
+	background-color:#EEE;
+	color:#444;
+	}
+#content-border-left #search #search-border .search-content{
+	width:230px;
+	height:45px;
+	margin-left:5px;
+	background-color:transparent;
+	border:0px;
+	font-family:"微软雅黑";
+	line-height:45px;
+	font-size:14px;
+	color:#444;
+	float:left;
+	padding:0 5px;
+	}
+#content-border-left #search #search-border .search-btn{
+	width:30px;
+	height:30px;
+	margin-top:7px;
+	margin-left:10px;
+	float:left;
+	background-image:url(../images/search-btn.png);
+	background-color:transparent;
+	border:0px;
+	}
+
+#content-border-left #charts{
+	width:360px;
+	height:330px;
+	overflow:hidden;
+	}
+#content-border-left #charts-title-border{
+	width:360px;
+	height:40px;
+	}
+#content-border-left #charts-title-border .charts-title{
+	font-size:16px;
+	font-weight:600;
+	}
+#content-border-left #charts-title-border .charts-title div{
+	cursor:pointer;
+	}
+#content-border-left #charts-content-border{
+	width:358px;
+	height:280px;
+	}
+#content-border-left #charts-content-border ul li{
+	list-style:none outside none;
+	}
+#content-border-left #charts-content-border li{
+	height:35px;
+	}
+#content-border-left #charts-content-border .charts-hot{
+	width:358px;
+	height:50px;
+	}
+#content-border-left #charts-content-border .charts-hot .hot-number{
+	width:48px;
+	height:40px;
+	}
+#content-border-left #charts-content-border .charts-hot .hot-content{
+	width:300px;
+	height:40px;
+	border-bottom:thin dashed #BBBBBB;
+	}
+#content-border-left #charts-content-border .charts-hot .hot-content .hot-title{
+	width:300px;
+	height:20px;
+	font-size:14px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	}
+#content-border-left #charts-content-border .charts-hot .hot-content .hot-comment{
+	width:300px;
+	height:15px;
+	font-size:12px;
+	}
+
+
+/***搜索部分 END**/
+
+
+/***今日焦点**/
+#content-border-left #focus-title{
+	width:360px;
+	height:25px;
+	float:left;
+	}
+#content-border-left #focus-title a{
+	float:left;
+	font-family:"微软雅黑";
+	font-size:18px;
+	color:#06799f;
+	}
+#content-border-left #focus-content{
+	width:360px;
+	height:230px;
+	float:left;
+	}
+#content-border-left #focus-content ul,li{list-style:none;}
+
+#content-border-left #focus-content ul li{
+	width:175px;
+	font-size:13px;
+	line-height:21px;
+	padding-left:5px;
+	float:left;
+	overflow:hidden;
+	padding-top:8px;
+	}
+#content-border-left #focus-content-img{
+	width:360px;
+	height:175px;
+	float:left;
+/*	background-color:#09F;*/
+	}
+#content-border-left #focus-content-img #news-img{
+	width:360px;
+	height:110px;
+	padding-top:10px;
+	}
+#content-border-left #focus-content-img #news-img .img{
+	width:175px;
+	height:110px;
+	background-color:#000;
+	float:left;
+	}
+#content-border-left #focus-content-img #news-flash{
+	width:350px;
+	height:50px;
+	margin-top:5px;
+	padding-left:10px;
+	background-color:#BBB;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	-o-border-radius:10px;
+	-ms-border-radius:10px;
+	}
+#content-border-left #focus-content-img #news-flash .flash-title{
+	width:280px;
+	height:45px;
+	padding-top:5px;
+	float:left;
+	}
+#content-border-left #focus-content-img #news-flash .flash-title a{
+	color:#09F;}
+#content-border-left #focus-content-img #news-flash .flash-title a:hover{
+	color:#900;}	
+#content-border-left #focus-content-img #news-flash .flash-title li{
+	width:270px;
+	height:45px;
+	line-height:45px;
+	font-size:14px;
+	font-weight:600;
+	overflow:hidden;
+	}
+#content-border-left #focus-content a{
+	color:#444;}
+#content-border-left #focus-content a:hover{
+	color:#F00;}	
+/***今日焦点 end**/
+
+
+#content-border-banner{
+	width:960px;
+	height:250px;
+	float:left;
+	*margin-top:15px;
+	}
+#content-border-banner #banner-title{
+	width:960px;
+	height:50px;
+	}
+#content-border-banner #banner-title a{
+	font-size:12px;
+	}
+#content-border-banner #banner-content{
+	widows:960px;
+	height:200px;
+	overflow:hidden;
+	}
+#content-border-banner #banner-content ul,li{
+	list-style:none outside none;
+	}
+#content-border-banner #banner-content li{
+	width:235px;
+	height:200px;
+	float:left;
+	text-align:center;
+	margin-right:5px;
+	position:relative;
+	}
+#content-border-banner #banner-content li span{
+	display:inline-block;
+	width:228px;
+	height:25px;
+	line-height:25px;
+	margin-top:25px;
+	background-color:rgba(34,34,34,0.6);
+	position:absolute;
+	left:2px;
+	bottom:0;
+	}	
+#content-border-banner #title-gray-hr{
+	width:958px; 
+	height:4px; 
+	background-color:#999;
+	}
+#content-border-banner #banner-content li span a{
+	color:#FFF;
+	font-size:12px;
+	}
+#content-border-banner #banner-content li span:hover{
+	background-color:rgba(34,34,34,0.4);
+	}
+/*content-border-banner END*/
+
+#content-right{
+	width:200px;
+	height:auto;
+	float:left;
+	}
+#content-border-right{
+	width:200px;
+	height:200px;
+	float:left;
+	margin-bottom:10px;
+	}
+
+/**天气**/
+#content-border-right #weather-top{
+	width:200px;
+	height:150px;
+	background-color:#3aaacf;
+	}
+#content-border-right #weather-top .weather-icon{
+	width:130px;
+	height:130px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+#content-border-right #weather-top .weather-title{
+	font-family:"微软雅黑";
+	color:#DDD;
+	font-weight:bold;
+	font-size:18px;
+	text-align:center;
+	margin-top:-5px;
+	}
+#content-border-right #weather-bottom{
+	width:200px;
+	height:55px;
+	background-color:#DDD;
+	}
+#content-border-right #weather-bottom .weather-city{
+	float:left;
+	font-family:"微软雅黑";
+	color:#444;
+	font-weight:bold;
+	font-size:24px;
+	margin-top:10px;
+	margin-left:5px;
+	margin-right:10px;
+	}
+#content-border-right #weather-bottom .weather-temperature{
+	width:100px;
+	height:18px;
+	margin-top:0px;
+	margin-left:10px;
+	float:left;
+	font-family:"微软雅黑";
+	color:#444;
+	font-weight:600;
+	font-size:18px;
+	line-height:18px;
+	}
+
+#content-border-right #weather-bottom .weather-date{
+	width:110px;
+	height:20px;
+	margin-top:8px;
+	margin-left:10px;
+	float:left;
+	font-family:"微软雅黑";
+	color:#444;
+	font-weight:300;
+	font-size:14px;
+	line-height:20px;
+	}
+#content-border-right #weather-bottom .weather-temperature,.weather-date img{
+	float:left;
+	}
+.weather-date{
+	padding-top:5px;	
+	}
+/**天气 END**/
+
+/****/
+#content-border-right ul,li{
+	list-style:none outside none;
+	}
+#content-border-right .pietitle{
+	font-size:13px;
+	}
+#content-border-right .pietitle li{
+	height:25px;
+	line-height:25px;
+	width:200px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space:nowrap;
+	}
+#content-border-right .pielink{
+	width:90px;
+	height:45px;
+	float:left;
+/*	background-color:#F66;*/
+	float:left;
+	margin-right:10px;
+	margin-bottom:5px;
+	text-align:center;
+	line-height:45px;
+	font-size:12px;
+	font-weight:600;
+	color:#EEE;
+	cursor:pointer;
+	transition:all 1s ease-in-out;
+	-moz-transition:all 1s ease-in-out;
+	-o-transition:all 1s ease-in-out;
+	-webkit-transition:all 1s ease-in-out;
+	}
+#content-border-right .pielink:hover{
+	background-color:#06799f;
+	}
+/****/
+#content-border-child{
+	width:473px;
+	*height:330px;
+	float:left;
+	margin-top:10px;
+	border:1px solid #DDD;
+	}
+#content-border-child .title{
+	font-family:"微软雅黑";
+	font-size:14px;
+	font-weight:600;
+	color:#06799f;
+	}
+#content-border-child>div>a{
+	font-size:12px;
+	}
+#content-border-child ul li{
+	list-style:none outside none;
+	}
+#content-border-child li{
+	line-height:25px;
+	height:28px;
+	clear:both;
+	}
+#content-border-child .channel-title{
+	width:65px;
+	height:25px;
+	line-height:25px;
+	overflow:hidden;
+	font-size:12px;
+	padding-left:10px;
+	}
+#content-border-child .channel-content{
+	width:310px;
+	height:25px;
+	overflow:hidden;
+	font-size:14px;
+	line-height:25px;
+	}
+
+#content-border-child .channel-data{
+	width:65px;
+	height:25px;
+	font-size:12px;
+	text-align:center;
+	}
+#content-border-child .gray-hr{
+	width:473px; 
+	height:4px; 
+	background-color:#999;
+	margin-top:15px;
+	}
+#jscroll{
+	width: 278px;
+	height: 307px;
+	overflow: hidden; 
+}

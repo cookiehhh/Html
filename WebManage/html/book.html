@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/min.css">
+	</head>
+
+	<body>
+		<header>
+			<div>
+				<h1>后台管理系统</h1>
+				<nav>
+					<ul>
+						<li>欢迎管理员:<strong>admin</strong></li>
+						<li>
+							<a href="javascript:void(0);" onclick="logout()">退出登录</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<article>
+				<div class="panel">
+					<div class="panel-heading">
+						<div class="panel-title">用户列表</div>
+					</div>
+					<div class="panel-body">
+						<div class="pull-left"">
+							<a><input type="button" class="button" value="添加" /></a>
+							
+						</div>
+						<div class="pull-right"">
+							<input id="name" type="text" name="name" placeholder="请填写姓名" />
+							<input type="button" class="button" value="搜索" />
+						</div>
+						<table class="bordered">
+								
+								<tr>
+									<th>ID</th>
+									<th>书名</th>
+									<th>作者</th>
+									<th>出版社</th>
+									<th>库存</th>
+									<th>操作</th>
+								</tr>
+							<tr>
+								<td>1</td>
+								<td>第一本书</td>
+								<td>张三</td>
+								<td>临沂大学出版社</td>
+								<td>20</td>
+								<td>
+									<input type="button" class="upd-button" value="编辑" />
+									<input type="button" class="del-button" value="删除" />
+									<input type="button" class="bor-button" value="借阅" />
+								</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>第一本书</td>
+								<td>张三</td>
+								<td>临沂大学出版社</td>
+								<td>20</td>
+								<td>
+									<input type="button" class="upd-button" value="编辑" />
+									<input type="button" class="del-button" value="删除" />
+								</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>第一本书</td>
+								<td>张三</td>
+								<td>临沂大学出版社</td>
+								<td>20</td>
+								<td>
+									<input type="button" class="upd-button" value="编辑" />
+									<input type="button" class="del-button" value="删除" />
+									<input type="button" class="bor-button" value="借阅" />
+								</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>第一本书</td>
+								<td>张三</td>
+								<td>临沂大学出版社</td>
+								<td>20</td>
+								<td>
+									<input type="button" class="upd-button" value="编辑" />
+									<input type="button" class="del-button" value="删除" />
+								</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>第一本书</td>
+								<td>张三</td>
+								<td>临沂大学出版社</td>
+								<td>20</td>
+								<td>
+									<input type="button" class="upd-button" value="编辑" />
+									<input type="button" class="del-button" value="删除" />
+									<input type="button" class="bor-button" value="借阅" />
+								</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>第一本书</td>
+								<td>张三</td>
+								<td>临沂大学出版社</td>
+								<td>20</td>
+								<td>
+									<input type="button" class="upd-button" value="编辑" />
+									<input type="button" class="del-button" value="删除" />
+								</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>第一本书</td>
+								<td>张三</td>
+								<td>临沂大学出版社</td>
+								<td>20</td>
+								<td>
+									<input type="button" class="upd-button" value="编辑" />
+									<input type="button" class="del-button" value="删除" />
+									<input type="button" class="bor-button" value="借阅" />
+								</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>第一本书</td>
+								<td>张三</td>
+								<td>临沂大学出版社</td>
+								<td>20</td>
+								<td>
+									<input type="button" class="upd-button" value="编辑" />
+									<input type="button" class="del-button" value="删除" />
+								</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>第一本书</td>
+								<td>张三</td>
+								<td>临沂大学出版社</td>
+								<td>20</td>
+								<td>
+									<input type="button" class="upd-button" value="编辑" />
+									<input type="button" class="del-button" value="删除" />
+									<input type="button" class="bor-button" value="借阅" />
+								</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>第一本书</td>
+								<td>张三</td>
+								<td>临沂大学出版社</td>
+								<td>20</td>
+								<td>
+									<input type="button" class="upd-button" value="编辑" />
+									<input type="button" class="del-button" value="删除" />
+								</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>第一本书</td>
+								<td>张三</td>
+								<td>临沂大学出版社</td>
+								<td>20</td>
+								<td>
+									<input type="button" class="upd-button" value="编辑" />
+									<input type="button" class="del-button" value="删除" />
+									<input type="button" class="bor-button" value="借阅" />
+								</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>第一本书</td>
+								<td>张三</td>
+								<td>临沂大学出版社</td>
+								<td>20</td>
+								<td>
+									<input type="button" class="upd-button" value="编辑" />
+									<input type="button" class="del-button" value="删除" />
+								</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>第一本书</td>
+								<td>张三</td>
+								<td>临沂大学出版社</td>
+								<td>20</td>
+								<td>
+									<input type="button" class="upd-button" value="编辑" />
+									<input type="button" class="del-button" value="删除" />
+									<input type="button" class="bor-button" value="借阅" />
+								</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>第一本书</td>
+								<td>张三</td>
+								<td>临沂大学出版社</td>
+								<td>20</td>
+								<td>
+									<input type="button" class="upd-button" value="编辑" />
+									<input type="button" class="del-button" value="删除" />
+								</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>第一本书</td>
+								<td>张三</td>
+								<td>临沂大学出版社</td>
+								<td>20</td>
+								<td>
+									<input type="button" class="upd-button" value="编辑" />
+									<input type="button" class="del-button" value="删除" />
+									<input type="button" class="bor-button" value="借阅" />
+								</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>第一本书</td>
+								<td>张三</td>
+								<td>临沂大学出版社</td>
+								<td>20</td>
+								<td>
+									<input type="button" class="upd-button" value="编辑" />
+									<input type="button" class="del-button" value="删除" />
+								</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>第一本书</td>
+								<td>张三</td>
+								<td>临沂大学出版社</td>
+								<td>20</td>
+								<td>
+									<input type="button" class="upd-button" value="编辑" />
+									<input type="button" class="del-button" value="删除" />
+								</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>第一本书</td>
+								<td>张三</td>
+								<td>临沂大学出版社</td>
+								<td>20</td>
+								<td>
+									<input type="button" class="upd-button" value="编辑" />
+									<input type="button" class="del-button" value="删除" />
+								</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>第一本书</td>
+								<td>张三</td>
+								<td>临沂大学出版社</td>
+								<td>20</td>
+								<td>
+									<input type="button" class="upd-button" value="编辑" />
+									<input type="button" class="del-button" value="删除" />
+								</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>第一本书</td>
+								<td>张三</td>
+								<td>临沂大学出版社</td>
+								<td>20</td>
+								<td>
+									<input type="button" class="upd-button" value="编辑" />
+									<input type="button" class="del-button" value="删除" />
+								</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>第一本书</td>
+								<td>张三</td>
+								<td>临沂大学出版社</td>
+								<td>20</td>
+								<td>
+									<input type="button" class="upd-button" value="编辑" />
+									<input type="button" class="del-button" value="删除" />
+								</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>第一本书</td>
+								<td>张三</td>
+								<td>临沂大学出版社</td>
+								<td>20</td>
+								<td>
+									<input type="button" class="upd-button" value="编辑" />
+									<input type="button" class="del-button" value="删除" />
+								</td>
+							</tr>
+							<tr class="red">
+								<td>1</td>
+								<td>第一本书</td>
+								<td>张三</td>
+								<td>临沂大学出版社</td>
+								<td>20</td>
+								<td>
+									<input type="button" class="upd-button" value="编辑" />
+									<input type="button" class="del-button" value="删除" />
+								</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>第一本书</td>
+								<td class="yellow">张三</td>
+								<td class="green">临沂大学出版社</td>
+								<td>20</td>
+								<td>
+									<input type="button" class="upd-button" value="编辑" />
+									<input type="button" class="del-button" value="删除" />
+								</td>
+							</tr>
+							
+							
+						</table>
+						<div class="pull-footer">
+							<input type="button" class="page-button" value="上一页" />
+							<input type="button" class="page-buttons" value="1" />
+							<input type="button" class="page-button" value="下一页" />
+							<label>&emsp;&emsp;共有100条记录&ensp;当前1/10页,跳转至</label>
+							<select name="selection">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<footer>
+					<p>
+						<a href="#">图书管理</a> ©版权所有</p>
+				</footer>
+			</article>
+			<aside>
+				<nav>
+					<ul>
+						<li>导航列表</li>
+						<li>
+							<a href="#" target="main" class="active">图书管理</a>
+						</li>
+						<li>
+							<a href="#" target="main">类别管理</a>
+						</li>
+						<li>
+							<a href="#" target="main">用户管理</a>
+						</li>
+						<li>
+							<a href="#" target="main">评论管理</a>
+						</li>
+						<li>
+							<a href="#" target="main">其它管理</a>
+						</li>
+					</ul>
+				</nav>
+			</aside>
+		</main>
+	</body>
+
+</html>
+<script>
+	function logout() {
+		if(window.confirm('是否退出?')) {
+			window.location.href = 'login.html';
+		} else {
+			return false;
+		}
+	}
+</script>

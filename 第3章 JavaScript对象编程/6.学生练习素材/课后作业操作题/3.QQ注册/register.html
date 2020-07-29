@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>用户注册</title>
+<style type="text/css">
+td{font-size:12px}
+h1{ font-size:12px;background:#F4FBFF}
+a{
+	color:#0E69C7; text-decoration:none;
+}
+a:hover{text-decoration:underline; color:#FF6633}
+.style1 {color: #FF0000}
+</style>
+
+</head>
+
+<body>
+
+<form action="" method="post">
+<table  width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr><td><img src="images/top.jpg"></td></tr>
+</table>
+<table align="center" class="main">
+<tr>
+  <td >
+欢迎您申请免费QQ号码，申请过程将不会收取您任何费用。我们承诺保护您的信息安全,不会将它提供给任何第三方。<BR>
+注：<FONT color="red">*</FONT>为必填内容
+  </td>
+</tr>
+<tr><td><H1>您的帐户信息</H1></td></tr>
+<tr>
+  <td>
+	<table width="514" align="center">
+		<tr>
+			<td width="108" align="right" > <span class="style1">*</span> 昵称： </td>
+			<td width="394"><input type="text" id="txtUser" size="30"/></td>
+		</tr>
+		<tr><td>&nbsp;</td>
+		<td  >英文字母，数字或者下划线，长度为4-16个字符</td>
+		</tr>
+		<tr>
+			<td width="108" align="right" > <span class="style1">*</span> 密码： </td>
+			<td width="394"><input type="password" id="txtPass"size="30"/></td>
+		</tr>
+		<tr><td>&nbsp;</td>
+		<td >6-16个字符组成字母或数字组成</td>
+		</tr>
+		<tr>
+			 <td align="right"><span class="style1">*</span> 重新输入密码：</td>
+			 <td><input id="txtrPass" type="password" /></td>
+		</tr>
+		
+	</table>  
+	</td>
+ </tr>
+<tr><td><H1>您的个人信息</H1></td></tr>
+<tr>
+  <td>
+  	<table width="514" align="center">
+		<tr>
+			 <td width="110" align="right"> <span class="style1">*</span> 出生日期： </td>
+		    <td width="392"><input id="txtBirth" type="text" maxlength="10"/>
+		    日期格式yyyy-mm-dd</td>
+		</tr>
+		<tr>
+			  <td  align="right"> 性别：</td>
+			  <td><input name="sex" type="radio" value="male" checked="checked"/>
+			  男<input name="sex" type="radio" value="fmale"/>
+			  女</td>
+		</tr>
+		<tr>
+			  <td  align="right"><span class="style1">*</span>电子邮件地址：</td>
+			  <td><input id="txtEmail" type="text" /></td>
+		</tr>
+	</table>  
+  </td>
+</tr>
+<tr><td><H1>所在地区</H1></td></tr>
+<tr>
+  <td>
+  	<table width="514" align="center">
+		<tr>
+			<td width="113" align="right" > 国家： </td>
+			<td width="389"><select id="national">
+			  <option value="1" selected>中华人民共和国</option>
+			  <option value="2">其他国家和地区</option>
+			</select></td>
+		</tr>
+		<tr><td align="right">省份：</td>
+		<td >
+			<select id="distract">
+			  <option selected>请选择</option>
+			  <option value="1">北京</option>
+			  <option value="2">天津</option>
+			  <option value="3">上海</option>
+			  <option value="4">重庆</option>
+			  <option value="5">东北</option>
+			  <option value="6">西北</option>
+			  <option value="7">华北</option>
+			</select>
+		</td>
+		</tr>
+	</table>  
+  </td>
+</tr>
+<tr><td><H1>相关服务条款</H1></td></tr>
+<tr>
+  <td>
+  	<table width="665">
+		<tr><td align="center"><input type="submit" name="btn" value="提交注册"/></td></tr>
+	</table> 
+	
+  </td>
+</tr>
+</table>
+</form>
+</body>
+</html>

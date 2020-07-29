@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>商品列表</title>
+<style type="text/css">
+body{font-size:12px;
+      line-height:25px;
+	  }
+table{border-top:solid 1px #666666;
+      border-left:solid 1px #666666;
+	  }
+td{text-align:center;
+    border-right:solid 1px #666666;
+    border-bottom:solid 1px #666666;
+	}
+.left{text-align:left;
+      padding-left:10px;}
+#photo{
+       border:solid 1px #0066CC;
+	   width:200px;
+	   text-align:center;
+	   z-index:2;
+	   position:absolute;
+	   display:none;
+	   top:50px;
+	   left:50px;
+	   background-color:#ffffff;
+	   }
+#big{
+	
+	width:200px;
+	}
+</style>
+<script type="text/javascript">
+function show(image,event){
+	var x;
+	var y;
+document.getElementById("photo").style.display="block";
+  x=parseInt(event.clientX)+parseInt(document.documentElement.scrollLeft);
+  y=parseInt(event.clientY)+parseInt(document.documentElement.scrollTop);
+document.getElementById("photo").style.top=y+"px";
+document.getElementById("photo").style.left=x+"px";
+document.getElementById("big").src="images/"+image;
+
+}
+
+function shows(){
+document.getElementById("photo").style.display="block";
+}
+function hidden(){
+document.getElementById("photo").style.display="none";
+}
+window.onscroll="show()";
+</script>
+</head>
+
+<body><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr style="font-weight:bold; font-size:13px;">
+    <td style="width:100px;">商品图片</td>
+    <td>商品名称</td>
+    <td style="width:100px;">商品价格</td>
+  </tr>
+  <tr>
+    <td><img src="images/small_1.jpg" onmousemove="show('big_1.jpg',event)"  onmouseout="hidden()"/></td>
+    <td class="left">闪亮双色超漂漂蝴蝶耳</td>
+    <td>28.00元</td>
+  </tr>
+  <tr>
+    <td><img src="images/small_2.jpg" onmousemove="show('big_2.jpg',event)"  onmouseout="hidden()"/></td>
+    <td class="left">皇冠 09年完美芦荟胶10支装 40g/支 接受验货 去疤痕 祛痘痕 祛斑</td>
+    <td>96.00元</td>
+  </tr>
+  <tr>
+    <td><img src="images/small_3.jpg"  onmousemove="show('big_3.jpg',event)"  onmouseout="hidden()"/></td>
+    <td class="left">1681/诺基亚1681c/nokia 1681c</td>
+    <td>225.00元</td>
+  </tr>
+  <tr>
+    <td><img src="images/small_4.jpg"  onmousemove="show('big_4.jpg',event)" onmouseout="hidden()"/></td>
+    <td class="left">欧美vivi 简洁甜美 超人气百搭公主款短袖连衣裙</td>
+    <td> 88.00元</td>
+  </tr>
+  <tr>
+    <td><img src="images/small_5.jpg" onmousemove="show('big_5.jpg',event)" onmouseout="hidden()"/></td>
+    <td class="left">戴尔/DELL 1014 2.2G处理器/1G/160G/DVD刻/摄像头无线</td>
+    <td>3080.00元</td>
+  </tr>
+</table>
+<div id="photo" onmouseout="hidden()" onmousemove="shows()"><img src="images/big_1.jpg" id="big" /></div>
+<div style="height:2000px;"></div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>对联广告</title>
+<style type="text/css">
+body{width:1800px;
+height:5000px;}
+.left{
+   width:120px;
+   height:180px;
+   top:50px;
+   left:30px;
+   position:absolute;
+   }
+.right{
+   width:120px;
+   height:180px;
+   top:50px;
+   right:30px;
+   position:absolute;
+   }
+</style>
+<script type="text/javascript">
+var leftT;
+var leftL;
+var rightT;
+var rightR;
+var objLeft;
+var objRight;
+var rightWidth;
+function place(){
+	objLeft=document.getElementById("left");
+	objRight=document.getElementById("right");
+	rightWidth=document.getElementById("right1").width;
+	if(objLeft.currentStyle){//IE浏览器
+       leftT=parseInt(objLeft.currentStyle.top);
+       leftL=parseInt(objLeft.currentStyle.left);
+       rightT=parseInt(objRight.currentStyle.top);
+       rightR=parseInt(objRight.currentStyle.right);
+    }
+   else{//fireFox浏览器
+	   leftT=parseInt(document.defaultView.getComputedStyle(objLeft,null).top);
+       leftL=parseInt(document.defaultView.getComputedStyle(objLeft,null).left);
+       rightT=parseInt(document.defaultView.getComputedStyle(objRight,null).top);
+       rightR=parseInt(document.defaultView.getComputedStyle(objRight,null).right);
+	  
+	}
+
+}
+
+function move(){
+	objLeft.style.top=leftT+parseInt(document.documentElement.scrollTop)+"px";
+    objLeft.style.left=leftL+parseInt(document.documentElement.scrollLeft)+"px";
+	objRight.style.top=rightT+parseInt(document.documentElement.scrollTop)+"px";
+	objRight.style.left=parseInt(document.documentElement.scrollLeft)+parseInt(document.documentElement.clientWidth)-rightR-rightWidth+"px";
+	}
+
+window.onload=place;
+window.onscroll=move;
+
+</script>
+</head>
+
+<body onscroll="move()" >
+<div id="left"  class="left"><img src="images/leftad.jpg" id="left1" /></div>
+<div id="right" class="right"><img src="images/rightad.jpg" id="right1" /></div>
+
+</body>
+</html>

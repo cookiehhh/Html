@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>文档碎片</title>
+<style type="text/css">
+<!--
+p{
+	padding:2px;
+	margin:0px;
+}
+-->
+</style>
+<script language="javascript">
+function insertPs(){
+	var aColors = ["red","green","blue","magenta","yellow","chocolate","black","aquamarine","lime","fuchsia","brass","azure","brown","bronze","deeppink","aliceblue","gray","copper","coral","feldspar","orange","orchid","pink","plum","quartz","purple"];
+	var oFragment = document.createDocumentFragment();	//创建文档碎片
+	for(var i=0;i<aColors.length;i++){
+		var oP = document.createElement("p");
+		var oText = document.createTextNode(aColors[i]);
+		oP.appendChild(oText);
+		oFragment.appendChild(oP);		//将节点先添加到碎片中
+	}
+	document.body.appendChild(oFragment);	//最后一次性添加到页面
+}
+</script>
+</head>
+<body onload="insertPs()">
+</body>
+</html>

@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>福彩</title>
+<style type="text/css">
+body{
+	width:900px;
+	margin:0px auto;
+}
+</style>
+</head>
+
+<body>
+<div>
+	<img src="images/fucai.jpg"/>
+</div>
+<script>
+var temp,c=0;
+var num=7;
+var arr=new Array();
+do
+{
+	var flag=1;
+	if (c==0)
+	{
+		arr[c]=Math.floor(Math.random()*35+1);
+		c++;
+	}
+	else
+	{
+		temp=Math.floor(Math.random()*35+1);
+		for(var i=c;i>=0;i--)
+		{
+			if(temp==arr[i])
+				flag=0;
+		}
+		if(flag==1)
+		{
+			arr[c]=temp;
+			c++;
+		}
+	}
+}while(c<num)
+document.write("<h1>本期幸运号码为：<br>");
+for(var i=0;i<c;i++)
+{
+	document.write(arr[i]+"   ");
+}
+document.write("</h1>");
+</script>
+</body>
+</html>

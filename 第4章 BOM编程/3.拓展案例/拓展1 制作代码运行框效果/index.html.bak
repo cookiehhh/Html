@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>代码运行框</title>
+<style type="text/css">
+</style>
+<script language="javascript">
+function runCode(obj) { 
+  var winname = window.open('', "_blank", ''); 
+  winname.document.open('text/html', 'replace'); 
+  winname.document.write(obj.value); 
+  winname.document.close();
+} 
+</script>
+</head>
+<body>
+<textarea style="width: 50%" id="code1" rows="10">
+<script type="text/javascript"> 
+    alert("Got it!"); 
+</script>
+</textarea><br/> 
+<input type="button" value="run" onclick="runCode(document.getElementById('code1'))"/>
+</body>
+</html>

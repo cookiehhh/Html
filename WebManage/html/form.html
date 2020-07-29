@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表单</title>
+		<link rel="stylesheet" type="text/css" href="../css/form.css">
+	</head>
+	<body>
+		<form action="" method="post" class="basic-grey">
+			<h1>表单
+				<span>请在字段中填写所有文本。</span>
+			</h1>
+			
+			<label>
+				<span>姓名 :</span>
+				<input id="name" type="text" name="name" placeholder="请填写姓名" />
+			</label>
+			
+			<label>
+				<span>邮箱 :</span>
+				<input id="email" type="email" name="email" placeholder="请填写邮箱地址" />
+			</label>
+		
+			<label>
+				<span>信息 :</span>
+				<textarea id="message" name="message" placeholder="请填写信息"></textarea>
+			</label>
+			
+			<label>
+				<span>爱好 :</span>
+				<select name="selection">
+					<option value="吃饭">吃饭</option>
+					<option value="睡觉">睡觉</option>
+					<option value="打豆豆">打豆豆</option>
+				</select>
+			</label>
+			
+			<label>
+				<span>&nbsp;</span>
+				<input type="button" class="button" value="Send" />
+			</label>
+		</form>
+	</body>
+</html>

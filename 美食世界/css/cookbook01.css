@@ -1,0 +1,29 @@
+.head{
+	margin: 0px auto;
+	text-align: center;
+}
+hr{
+	color: aqua;
+	size: a3;
+}
+.main{
+	margin: 0px auto;
+	text-align: center;
+	width: 674px;
+}
+.tab{
+	font-family: "宋体";
+	font-size: 20px;
+	margin: 0px 30px;
+}
+
+.h{
+	margin: 0px auto;
+	text-align: center;
+}
+table{
+	width: 500px;
+	height: 100px;
+	background-color: #FAE8C8;
+	text-align: center;
+}

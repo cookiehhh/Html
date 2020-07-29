@@ -1,0 +1,93 @@
+.h2{
+	margin: 50px 0px 0px 0px;
+	clear: both;
+	text-align: center;
+}
+hr{
+	clear: both;
+}
+a{
+	color: #222222;
+	text-decoration: none;
+}
+
+.index {
+	width: 960px;
+	margin: 50px auto;
+}
+.index .indexlist{
+    margin:0px 10px 0px 0px;
+}
+.index .indexlist .indeximg img{
+    border-radius: 25px;
+}
+.index .indexlist .indeximg img.hover{
+    width: 230px;
+	height: 190px;
+}
+.index .indexlist li{
+	border-radius: 25px;
+    float: left;
+    position: relative;
+    margin: 0px 40px 40px 40px;
+    background-color: #fff;
+    list-style: none;
+}
+.index .indexlist li.hover,.index ul li:hover{
+    box-shadow: 0 0 30px rgba(0,0,0,.2);
+    transition: all 0.5s;
+}
+.indexdec{
+	text-align: center;
+    line-height:24px;
+    padding:10px 10px 16px 10px;
+    font-size:14px;
+}
+
+.switch{
+	width: 1000px;
+	height: 300px;
+	overflow: hidden;
+	padding: 0px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.sw{
+	width: 4000px;
+	height: 300px;
+	position: relative;
+	left: -1000px;
+	animation: swimg 16s linear infinite normal;
+	animation-direction: alternate;
+}
+.swi{
+	margin: 0px;
+	padding: 0px;
+	width: 1000px;
+	float: left;
+}
+.swi1{
+	list-style: none;
+	float: left;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+
+.swi li img{
+	width: 250px;
+	height: 250px;
+}
+@keyframes swimg{
+	0% {left: 0px}
+	5% {left: 0px}
+
+	30% {left: -1000px}
+	40% {left: -1000px}
+
+	60%{left: -2000px;}
+	70% {left: -2000px}
+
+	95%{left:-3000px;}
+	100%{left:-3000px;}
+}

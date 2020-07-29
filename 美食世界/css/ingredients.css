@@ -1,0 +1,75 @@
+
+a{
+	color: #222222;
+	text-decoration: none;
+}
+hr{
+	clear: both;
+}
+.menu {
+	width: 960px;
+	margin: 10px auto;
+}
+.menu .menulist{
+    
+}
+.menu .menulist .menuimg{
+	text-align: center;
+	margin:10px auto;
+    width: 80px;
+    height: 40px;
+}
+.menu .menulist li{
+    float: left;
+    position: relative;
+    margin:20px 15px;
+    ackground-color: #FAE8C8;
+    list-style: none;
+}
+.menu .menulist li.hover,.menu ul li:hover{
+    box-shadow: 0 0 30px rgba(0,0,0,.2);
+    transition: all 0.5s;
+    background-color: #FAE8C8;
+    border-bottom: 5px solid #F6A200;
+}
+.menudec{
+	text-align: center;
+	width: 80px;
+	height: 15px;
+    line-height:0px;
+    padding:10px 10px 16px 10px;
+    font-size:14px;
+}
+.ingredients {
+	width: 960px;
+	margin: 10px auto;
+}
+.ingredients .ingredientslist{
+    
+}
+.ingredients .ingredientslist .ingredientsimg{
+	text-align: center;
+	margin:20px auto;
+    width: 135px;
+    height: 95px;
+}
+.ingredients .ingredientslist li{
+    float: left;
+    position: relative;
+    margin: 15px 10px;
+    ackground-color: #FAE8C8;
+    list-style: none;
+}
+.ingredients .ingredientslist li.hover,.ingredients ul li:hover{
+    box-shadow: 0 0 30px rgba(0,0,0,.2);
+    transition: all 0.5s;
+    background-color: #FAE8C8;
+}
+.ingredientsdec{
+	text-align: center;
+	width: 135px;
+	height: 15px;
+    line-height: 0px;
+    padding:10px 10px 16px 10px;
+    font-size:18px;
+}

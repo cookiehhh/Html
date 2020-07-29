@@ -1,0 +1,13 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>注册页面</TITLE>
+<head>
+<BODY bgcolor="#CCCCCC">
+    <CENTER>
+        <TABLE border="0" align="center">
+            <TR><TD><IMG src="images/reg.jpg"></TD></TR>
+        </TABLE>
+    </CENTER>
+</BODY>
+</HTML>

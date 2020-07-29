@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>选号器</title>
+<style type="text/css">
+.inputTxt{height:500px;width:600px;font-size:360px;text-align:center;}
+</style>
+<script language="javascript" type="text/javascript">
+var timer;
+function startScroll()
+{
+    var num=Math.floor(Math.random()*60+1);
+	document.myForm.myText.value=num;
+	timer=setTimeout("startScroll()",60);
+}
+function stopScroll()
+{
+    clearTimeout(timer);
+}
+</script>
+
+</head>
+
+<body>
+<center>
+<form name="myForm">
+<input name="myText" type="text" value="0" class="inputTxt"/>
+<input name="start" type="button" value="开始" onclick="startScroll()" />   
+<input name="stop" type="button" value="停止" onclick="stopScroll()" />
+</form>
+</center>
+</body>
+</html>

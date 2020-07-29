@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"><comment> charset 设置网页字符类型 </comment>
+		<title>标题</title>
+	</head>
+	<body>
+		<comment> 文字与段落 </comment>
+		<hr align="center" size="1" /><comment>  hr 插入水平线  align 排列方式  </comment>
+		<h2><center> h2 字体大小  center 居中</center></h2>
+		<comment> <h# align = "left|center|right|justift">文字</h#> <justift 两端对齐> </comment>
+		<comment> 添加空格 &nbsp;" </comment>
+		<font face="微软雅黑" size="4" color="black"></font><comment> font 设置网页文字的字体、颜色、字号 </comment>
+		<b> 粗体 </b>
+		<i> 斜体 </i>
+		<u> 下划线 </u>
+		<del> 删除线 </del>
+		<sup> 上标 常用于数学公式 </sup>
+		<sub> 下标 </sub>
+		<ruby> 被说明文字 <rt> 文字的标注 </rt> </ruby> <comment> 在文字上方添加标注 一般不常用 </comment>
+		<address> 设置地址文字 邮箱 </address>
+		<tt> 设置等宽文字 </tt>
+		<p> 段落标记  </p>
+		<comment> <br> 换行标记 </comment>
+		<nobr> 不换行 </nobr>
+		<center> 居中标记 </center>
+		<hr width="100%" size="4" color="antiquewhite" align="center" />
+		<comment> 水平分割线 align对齐方式 width宽度 size高度 color颜色 noshade 无阴影 </comment>
+		<pre> 预格式化标记 保留代码里原样的排版 </pre>
+		<blockquote> 设置段落缩进 5个字符 </blockquote>
+			
+        <comment> 列表 </comment>
+        <ul type="circle"><comment> circle空心圆点 disc实心圆点 square实心方块 </comment>
+        	<li>项目名称</li>
+        	<li>项目名称</li>
+        </ul><comment> 无序列表 </comment>
+        
+        <ol type="1" start="3">
+        	<comment>type: 1阿拉伯数字 a小写英文字母 A大写英文字母 i小写罗马数字 I大写罗马数字 </comment>
+        	<comment>start: 编号起始值的指定 无序列表没有  </comment>
+        	<li>项目名称</li>
+        	<li value="5">项目名称</li><comment>value: 设置当前列的默认值 后续列跟随改变  </comment>
+        	<li>项目名称</li>
+        </ol><comment> 有序列表 </comment>
+        
+        <comment> 嵌套列表：例如A下又分小的列a </comment>
+        
+        <comment> 定义列表 </comment>
+        <dl>                        	<comment> 创建定义列表 </comment>
+        	<dt> 报名 </dt>             	<comment> 创建列表中的上层项目 </comment>
+        		<dd> 报名时间： </dd>		<comment> 创建列表中的下层项目 </comment>
+        		<dd> 报名地点： </dd>
+        		<dd> 报名费用： </dd>
+        	<dt> 培训 </dt>             	
+        		<dd> 培训时间： </dd>		
+        		<dd> 培训地点： </dd>
+        		<dd> 培训费用： </dd>  
+        </dl>
+        
+        <comment> 菜单列表 </comment>
+        <menu>				<comment> 用于显示一个简单的单列列表，一般不做嵌套使用 </comment>
+        	<li>项目名称</li>
+        	<li>项目名称</li>
+        	<li>项目名称</li>
+        </menu>
+        
+        <comment> 目录列表 </comment>
+        <dir>				<comment> 用于显示多列的文件列表，可以做嵌套 </comment>
+        	<li>项目名称</li>
+        	<li>项目名称</li>
+        	<li>项目名称</li>
+        </dir>
+        
+        <comment> 超链接 </comment>
+        <a href="链接地址" title="指向超链接名称显示的文字" target="窗口打开方式">超链接名称</a>  <comment>创建超链接</comment>
+        <a href="https://www.bilibili.com/" title="感觉没什么用" target="_blank">bilibili</a>
+        <comment> _blank:在新窗口打开  _self:在当前窗口打开  _parent:在其父窗口中打开 </comment>
+        <comment> 内部链接 </comment>
+        <a href="E:/Web/tg.html" class="head" >唐诗欣赏</a>
+        <comment> 外部链接 </comment>
+        <a href="https://www.bilibili.com/" >bilibili</a>
+        
+        <comment> 图片链接 </comment>
+        <a href="www.baidu.com" target="_blank">
+        	<img src="images/baidu_logo.gif" />		<comment> <img>:插入图片 crs：图片地址 </comment>
+        </a>
+        
+        <comment> 书签链接 </comment>
+        <a href="#书签名称" target="_blank">链接标题</a>		<comment> 同一页面内使用的格式 </comment>
+        <a href="url地址#书签名称" target="_blank">链接标题</a>		<comment> 不同页面内使用的格式 </comment>
+        <comment> 建立书签 </comment>
+        <a name="书签名称">链接内容</a>
+        
+        <comment> 电子邮件链接 </comment>
+        <a href="mailto:E-mail 地址[?subject=邮件主题[]&参数=参数值]">链接内容</a>
+        <comment> mailto：电子邮件链接的属性，其后跟地址 </comment>
+        <comment> subject：电子邮件主题  cc：抄送收件人  bcc：暗送收件人 body：邮件内容 </comment>
+        <comment> 示例 </comment>
+        <p>
+        	这是邮件连接：
+        	<a href="mailto:1301969793@qq.com?cc = 2242616069@qq.com&subjet = 你好！&body = 祝你度过快乐的一天">联系我们</a>
+        </p>
+        
+        <comment> FTP链接 </comment>
+        <a href="ftp:/.../:ftp">链接内容</a>		<comment> ftp:/.../:ftp 资源地址 </comment>
+        
+        <comment> 下载文件的链接 </comment>
+        <a href="url">链接内容</a>		<comment> url：文件的所在的绝对路径或相对路径 </comment>
+        
+        <comment> 表格标记 </comment>
+        <table>							<comment>表格的开始</comment>
+        	<tr>						<comment>行的开始</comment>
+        		<td>...</td>			<comment>单元格的内容</comment>
+        	</tr>
+        	<tr>
+        		<td>...</td>
+        	</tr>
+        </table>
+        
+        <comment> 表格标题 </comment>
+        <caption>标题的内容</caption>
+        
+        <comment> 表格表头 </comment>
+        <tr>
+        	<th>...</th>				<comment>表头标记</comment>
+        </tr>
+        
+        <comment> 设置表格的边框属性 </comment>
+        <table border="1" bordercolor="red" bordercolorlight="red" bordercolordark="red"></table>
+        <command>
+        	border 					边框粗细(默认值为0)
+        	bordercolor 			边框颜色
+        	bordercolorlight 		亮边框颜色(左上边框)
+        	bordercolordark 		暗边框颜色(右下边框)
+        	width 					表格宽度
+        	hight 					表格高度
+        	bgcolor 				背景颜色
+        	background 				背景图片
+        	frame 					边框样式
+        	rules 					内边框样式
+        	cellspacing 			单元格间距
+        	cellpadding 			单元格边距
+        	align 					水平对齐方式
+        </command>
+        
+        <comment> 设置边框样式 </comment>
+        <comment>  frame：
+        	above 					显示上边框
+        	below 					显示下边框
+        	hsides 					显示上、下边框
+        	lhs 					显示左边框
+        	rhs 					显示右边框
+        	vsides 					显示左、右边框
+        	border 					显示上、下、左、右边框
+        	void 					不显示边框      	
+        </comment>
+        <comment>	rules：
+        	all 					显示所有内部边框
+        	none 					不显示内部边框
+        	cols 					仅显示列边框
+        	rows 					仅显示行边框
+        	groups 					显示介于行列间的边框       	
+        </comment>
+        
+        <comment> 行内容水平对齐 </comment>
+        <tr align="center"></tr>
+        <comment> 行内容垂直对齐 </comment>
+        <tr valign="middle"></tr>		<comment>top：居上  middle：居中  bottom：居中</comment>
+        
+        <comment> 设置单元格跨行 </comment>
+        <td rowspan="2"></td>
+        <comment> 设置单元格跨列 </comment>
+        <td colspan="2"></td>
+        
+        <comment> 表格嵌套 </comment>
+        
+        <comment> 表单 </comment>
+        <form name="" action="" method="">		<comment>name:表单名称 action：动作属性 method：方法属性</comment>
+        	
+        	<input name="" type="">				<comment>name:变量名 type:输出方式</comment>
+        	
+        	<select></select>
+        	
+        	<textarea></textarea>
+        	
+        </form>
+        
+        <comment> 单行文本输入框 </comment>
+        <form>
+        	<input name="text" type="text" maxlength="" size="" value="" />
+        </form>
+        <comment>maxlength：设置单行输入框可以输入的最大字符数</comment>
+        <comment>size：设置单行输入框可以显示的最大字符数</comment>
+        <comment>value：文本框的值</comment>
+        
+        <comment> 提交按钮 </comment>
+		<form>
+			<input name="submit" type="submit" value="提交" />
+		</form>
+		<comment> 重置按钮 </comment>
+		<form>
+			<input name="reset" type="reset" value="重置" />
+		</form>
+		<comment> 密码输入框 </comment>
+		<form>
+			<input name="password" type="password" maxlength="" size="" />
+		</form>
+		<comment> 复选框 </comment>
+		<form>
+			<input name="text" type="checkbox" value="" />
+		</form>
+		<comment> 单选按钮 </comment>
+		<form>
+			<input name="radio" type="radio" value="" />
+		</form>
+		<comment> 图像按钮 </comment>
+		<form>
+			<input name="image" type="image" src="" />
+		</form>
+		<comment> 文件选择输入框 </comment>
+		<form method="post" enctype="multipart/form-data">
+			<input name="file" type="file" />
+		</form>
+		<comment> 隐藏框 </comment>
+		<form>
+			<input name="hidden" type="hidden" value="" />
+		</form>
+		<comment> 多行文本输入框 </comment>
+		<form>
+			<textarea name="textarea" cols="" rows="" wrap="">初始的文字内容</textarea>
+		</form>
+		<comment>
+			name 			文本输入框的名字
+			rows 			文本输入框的行数
+			cols 			文本输入框的列数
+			wrap： 			默认文本自动换行
+				virtual
+				physical
+				off
+		</comment>
+		<comment>下拉列表框</comment>
+		<form>
+			<select name="" size="">		<comment>name：下拉列表的名字 size：下拉边框的大小</comment>
+				<option value="">
+				<option value="">
+			</select>
+		</form>
+        
+	</body>
+</html>

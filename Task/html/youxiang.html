@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>邮箱登录</title>
+		<style type="text/css">
+			body{
+				font-size: 14px;
+				line-height: 1.5;
+			}
+			#content{
+				margin: 0px auto;
+				width: 350px;
+				border: 1px solid red;
+			}
+			.tip{
+				text-align: center;
+			}
+			.foot{
+				margin: 0px auto;
+				width: 350px;
+				height: 350px;
+			}
+			label{
+				float: left;
+				width: 60px;
+				text-align: right;
+			}
+			input,select{
+				margin-right: 4px;
+				margin-left: 10px;
+				float: left;
+			}
+			span{
+				float: left;
+				margin-right: 7px;
+			}
+			hr{
+				margin: 30px 7px;
+			}
+			.order{
+				height: 26px;
+				margin: 7px 0;
+			}
+			.kong{
+				height: 26px;
+				margin: 7px 0;
+				margin-left: 60px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="content">
+			<div class="tip">
+				<h1>登录126网易邮箱</h1>
+			</div>
+			<div>
+				<form action="" method="post">
+					<div class="order">
+						<label>用户名</label>
+						<input name="name" type="text" />
+						<strong>@126.com</strong>
+					</div>
+					<div class="order">
+						<label>密码</label>
+						<input name="password" type="password" />
+						<a href="#">忘记密码？</a>
+						<span></span>
+					</div>
+					<div class="order">
+						<label>版本</label>
+						<select name="select" autofocus="off">
+							<option selected="selected" value="简约  3.0">简约  3.0</option>
+							<option value="简约  4.0">简约  4.0</option>
+							<option value="简约  5.0">简约  5.0</option>
+							<option value="简约  6.0">简约  6.0</option>
+						</select>
+					</div>
+					<div class="kong">
+						<input name="checkbox1" type="checkbox" /><span>两周内自动登录</span>
+						<input name="checkbox2" type="checkbox" /><span>SSL安全登录</span>						
+					</div>
+					<div class="kong">
+						<input name="submit" type="submit" value="登录"/>					
+					</div>
+					<div class="kong">
+						<hr />				
+					</div>
+					<div class="kong">
+						<span>还没有126网易免费邮？</span>
+						<input name="submit" type="submit" value="立即注册"/>					
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

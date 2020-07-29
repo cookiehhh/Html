@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>会员登录</title>
+<style type="text/css">
+table{width:300px;}
+body{
+	font-size:12px;
+    line-height:25px;
+	 }
+.left{
+	text-align:right;
+	width:80px;
+	height:35px;
+}
+</style>
+<script type="text/javascript">
+function over(){
+	var btn=document.getElementById("btn");
+	btn.src="images/login_mouseover.gif";
+	
+	}
+	function out(){
+	var btn=document.getElementById("btn");
+	btn.src="images/login.gif";
+	
+	}
+</script>
+</head>
+
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td colspan="2"><img src="images/title_login_2b.png"/></td>
+  </tr>
+  <tr>
+    <td class="left">会员名：</td>
+    <td><input name="user" type="text" size="20" /></td>
+  </tr>
+  <tr>
+    <td class="left">密码：</td>
+    <td><input name="pwd" type="password" size="21" /></td>
+  </tr>
+  <tr>
+    <td colspan="2" style=" text-align:center; height:45px;"><input name="btn" id="btn" src="images/login.gif" type="image" value=" " onmousemove="over()" onmouseout="out()" /></td>
+  </tr>
+</table>
+
+</body>
+</html>

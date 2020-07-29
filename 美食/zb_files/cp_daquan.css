@@ -1,0 +1,950 @@
+body{
+    background: #fff;
+}
+.cp_complete_l{
+    width:880px;
+}
+.cp_complete_nav{
+    height:30px;
+    padding-top:40px;
+    border-bottom: 1px solid #dcdcdc;
+}
+.cp_complete_nav h2{
+    font-weight:normal;
+    font-size:18px;
+}
+.cp_complete_nav .cp_complete_nav_in a{
+    font-size:16px;
+    color: #2d2d2d;
+    display: inline-block;
+    margin-left:47px;
+}
+.cp_complete_nav .cp_complete_nav_in a.active{
+    color: #f6a200;
+}
+.person_collection_list{
+    margin:0 -10px 0 0;
+    padding-top:30px;
+}
+.person_collection_list li{
+    width:226px;
+    height:320px;
+    float: left;
+    overflow: hidden;
+    background-color: #fff;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    border:1px solid #dcdcdc;
+    margin:0 10px 10px 0;
+}
+.person_collection_list li.hover{
+    -webkit-box-shadow: 0 0 30px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 0 30px rgba(0,0,0,.2);
+    box-shadow: 0 0 30px rgba(0,0,0,.2);
+}
+
+.person_collection_pic {
+    width:230px;
+    height:174px;
+
+}
+.person_collection_info,.person_collection_data{
+    padding:0 10px;
+
+}
+.person_collection_info .title{
+    font-size:16px;
+    color: #2d2d2d;
+    font-weight:normal;
+    line-height:40px;
+}
+.person_collection_info p{
+    font-size:14px;
+    color: #919191;
+    line-height:24px;
+    height:50px;
+    overflow: hidden;
+}
+.person_collection_data{
+    padding:15px 10px;
+
+}
+.person_collection_data a{
+    color: #919191;
+    font-size:12px;
+    position: relative;
+}
+.person_collection_data .data_span{
+    padding-left:20px;
+    position: relative;
+    display: inline-block;
+    margin-left:5px;
+}
+.person_collection_data span i{
+    position: absolute;
+    left:0;
+    top:50%;
+    margin-top: -9px;
+}
+.qx_btn{
+    display: none;
+}
+.person_collection_list li.hover .qx_btn{
+    display: block;
+}
+
+.cp_complete_r{
+    padding-top:70px;
+}
+/**/
+#tab1,#tab2
+{
+    overflow:hidden;
+}
+#tab1 li,#tab2 li
+{
+
+    color:#333;
+    height:40px;
+    line-height:40px;
+    font-size:18px;
+    padding-left:10px;
+    position: relative;
+    border-bottom:1px solid #dcdcdc;
+}
+#tab1 li:before,#tab2 li:before{
+    content: '';
+    width:3px;
+    height:18px;
+    background-color: #f6a200;
+    position: absolute;
+    left:0;
+    top:50%;
+    margin-top:-9px;
+}
+#content1 ul{
+    padding:0 6px;
+}
+#content1 ul li{
+    padding:18px 0;
+    border-bottom:1px dashed #dcdcdc;
+}
+#content1 .hot_pic{
+    width:68px;
+    height:68px;
+    overflow: hidden;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+}
+#content1 .hot_dec{
+    font-size:14px;
+    color: #2d2d2d;
+    line-height:24px;
+    padding:10px 0 10px 6px;
+    width:140px;
+    height:48px;
+    overflow: hidden;
+}
+/*热门食材*/
+.aside strong
+{
+    display:block;
+    height:40px;
+    line-height:40px;
+    position:relative;
+    font-size:18px;
+    font-weight:400;
+}
+.hot_ingredients ul li a,.listzi li,.ultu li p
+{
+    font-size:14px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap
+}
+.aside .cont
+{
+    padding-top:15px
+}
+.hot_ingredients ul li
+{
+    display:inline-block;
+    float:left;
+    height:32px;
+    line-height:30px;
+    margin-bottom:10px;
+    margin-right:4px;
+    overflow:hidden;
+    text-align:center;
+    width:53px
+}
+.hot_ingredients ul li a
+{
+    border:1px solid #ebebeb;
+    display:block
+}
+.hot_ingredients ul li:hover a
+{
+    color:#fff;
+    background:#f60
+}
+.hot_ingredients ul li:hover a img
+{
+    filter:alpha(opacity=80);
+    -moz-opacity:.8;
+    opacity:.8
+}
+.hot_ingredients ul
+{
+    height:115px
+}
+
+/*菜谱详情*/
+.cp_show_tt{
+    height:350px;
+    padding:36px 0;
+    background-color: #f3f3f3;
+}
+.cp_show_tt_in{
+    background-color: #fff;
+}
+.cp_show_tt_in .cp_show_pic{
+    width:740px;
+    height:350px;
+    text-align: center;
+}
+.cp_show_tt_in .cp_show_pic img{
+    width:auto;
+    display: inline-block;
+}
+.cp_show_tt_in .cp_show_text{
+    width:400px;
+    padding:30px 30px 0;
+}
+.cp_show_tt_in .cp_show_text .cp_show_text_t{
+    height:34px;
+    line-height:34px;
+    font-size:16px;
+}
+.cp_show_tt_in .cp_show_text .cp_show_text_t .cp_name{
+    font-size:22px;
+    max-width:300px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.cp_show_tt_in .cp_show_text .cp_show_text_t .sc_btn{
+    width:70px;
+    height:32px;
+    line-height:32px;
+    border:1px solid #f6a200;
+    color: #f6a200;
+    text-align: center;
+}
+.cp_show_tt_in .cp_show_text .cp_show_text_t .sc_btn.active{
+    background-color: #d9d9d9;
+    color: #919191;
+    border:1px solid #d9d9d9;
+}
+/**/
+.cp_show_text_mid{
+    padding:26px 0 15px 0;
+    line-height:36px;
+    font-size:16px;
+}
+.hot_food_comment_star{
+    padding-left: 8px;
+    padding-top:1px;
+}
+.hot_food_comment_star img{
+    display: inline-block;
+    width:15px;
+    height:15px;
+}
+.cp_show_text_mid .shoucang{
+    padding:0 30px;
+    font-weight:normal;
+}
+.cp_show_text_mid b{
+    font-weight: normal;
+}
+.cp_show_text_mid .shoucang_icon{
+    color: #cacaca;
+}
+ .cp_show_text_dec{
+    font-size:14px;
+    color: #2d2d2d;
+    line-height: 24px;
+     height:170px;
+     overflow: hidden;
+}
+
+ /*食材明细*/
+.food_pub_top_new{
+    padding:30px 0 10px 0;
+}
+.cp_step_main_l{
+    width:920px;
+}
+.food_detail{
+    padding: 0 10px 0 60px;
+}
+.food_detail ul{
+    width:100%;
+    display:block;
+
+    border-top:1px solid #eaeaea
+}
+.food_detail li{
+    float:left;
+    width:12%;
+    text-align:center;
+    height:70px;
+    border-bottom:1px solid #eaeaea;
+    position:relative;
+    margin-bottom:-1px;
+    padding-right:4px;
+}
+.food_detail li .category_s1{
+    display:block;
+    font-size:16px;
+    width:100%;
+    height:70px;
+    line-height:58px;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+    color:#2d2d2d;
+    font-weight: normal;
+}
+.food_detail li .category_s1 b{
+    font-weight:normal;
+}
+
+
+.food_detail li:hover{
+    background:#f8f8f8
+}
+.food_detail li .category_s2{
+    bottom:7px;
+    color:#919191;
+    display:block;
+    font-size:14px;
+    line-height:20px;
+    overflow:hidden;
+    position:absolute;
+    text-align:center;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    width:100%
+}
+/*步骤*/
+.recipeStep li{
+    display:block;
+    margin:0 0 40px 0
+}
+.food_detail div{
+    padding:1px 0;
+    font-size:14px
+}
+.food_detail div a{
+    color:#519af6;
+    padding:0 10px 0 0
+}
+.recipeStep{
+    margin-top:44px;
+}
+.recipeStep li .recipeStep_img{
+    width:240px;
+    display:inline-block;
+    zoom:1;
+    position:relative
+}
+.recipeStep li .noStep_img{
+    height:30px;
+    width:52px
+}
+.recipeStep li .recipeStep_img{
+    width:220px;
+    vertical-align:middle;
+}
+.recipeStep li .recipeStep_word{
+    position:relative;
+    width:640px;
+    display:inline-block;
+    zoom:1;
+    vertical-align:middle;
+    color:#666;
+    font-size:18px;
+    padding-left: 18px;
+    margin: 10px 0;
+}
+.recipeStep li .noStep_word{
+    width:100%
+}
+.recipeStep_num{
+    font-size:30px;
+    height:34px;
+    left:18px;
+    line-height:34px;
+    position:absolute;
+    text-align:center;
+    top:-44px;
+    width:34px;
+    font-weight: bold;
+    color: #f6a200;
+}
+.recipeStep_zoom{
+    display:none;
+    bottom:3px;
+    cursor:pointer;
+    height:20px;
+    position:absolute;
+    right:42px;
+    width:20px
+}
+.cp_step_main_r{
+    padding-top:48px;
+}
+/*小窍门*/
+.knack{
+    padding-left:64px;
+    font-size:16px;
+    color: #2d2d2d;
+    line-height:30px;
+    margin-bottom:30px;
+}
+.comment_box{
+    margin:30px 0;
+}
+
+/*成品图*/
+.product_end{
+    margin:0 -10px 0 0;
+}
+.product_end img{
+    float: left;
+    width:18%;
+    margin:0 10px 10px 0;
+}
+
+/*关于作者*/
+.about_author{
+    margin-bottom:40px;
+    padding:0 10px;
+}
+.about_author .about_anthor_head{
+    width:92px;
+    height:92px;
+    margin:27px auto;
+    overflow: hidden;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+}
+.about_author_info{
+    text-align: center;
+}
+.about_author_info .about_author_name{
+    display: block;
+    font-size:16px;
+    color: #2d2d2d;
+    height:30px;
+}
+.about_author_info p{
+    font-size:14px;
+    color: #919191;
+}
+.author_data{
+    height:45px;
+    padding:20px 0;
+}
+.author_data .author_data_item{
+    float: left;
+    width:49%;
+    text-align: center;
+    font-size:14px;
+    color: #919191;
+    line-height:22px;
+}
+.author_data .author_data_item span{
+    font-size:18px;
+}
+.author_data .author_data_item_border{
+    border-right:1px dashed #dcdcdc;
+}
+.author_other a{
+    width:90px;
+    height:32px;
+    line-height:32px;
+    color: #919191;
+    border:1px solid #dcdcdc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    display: block;
+    font-size:16px;
+}
+.author_other .att_btn{
+    background-color: #f6a200;
+    border:1px solid #f6a200;
+    color: #fff;
+}
+.author_other .att_btn:hover{
+    background-color: #ffba34;
+    border:1px solid #ffba34;
+}
+.author_other .att_btn.active{
+    border:1px solid #dcdcdc;
+    background-color: #dcdcdc;
+    color: #919191;
+}
+.author_other .att_btn.active:hover{
+    border:1px solid #dcdcdc;
+    background-color: #dcdcdc;
+    color: #919191;
+}
+.author_other a i{
+    margin-right:3px;
+}
+
+
+/*食材大全*/
+.sc_menu{
+    margin-top:46px;
+}
+.sc_menu_nav ul{
+    border-bottom:1px solid #dcdcdc;
+}
+.sc_menu_nav ul li{
+    float: left;
+
+    text-align: center;
+    width:150px;
+    font-size:16px;
+    cursor: pointer;
+    padding-bottom:3px;
+}
+.sc_menu_nav ul li.active{
+    padding-bottom:0;
+    border-bottom:3px solid #f6a200;
+}
+.sc_menu_nav li img{
+    width:auto;
+    display: inline-block;
+    max-width:30px;
+    height:30px;
+}
+.sc_menu_nav ul li p{
+    line-height:60px;
+}
+
+
+
+.sc_menu_con .sc_menu_item{
+    display: none;
+}
+.sc_menu_con .sc_menu_item.active{
+    display: block;
+}
+.sc_menu_item_l{
+    width:150px;
+    text-align: center;
+}
+.sc_menu_item_l .choice_dl{
+    line-height:40px;
+    font-size:16px;
+    color: #919191;
+    margin-bottom:30px;
+    padding-top:10px;
+}
+.sc_menu_item_l .choice_dl a{
+    color: #919191;
+    display: block;
+}
+.sc_menu_item_l .choice_dl a:hover{
+    color: #f6a200;
+}
+.sc_menu_item_l .choice_dl dt{
+    font-size:18px;
+    color: #f6a200;
+}
+.menu_season_list li{
+    text-align: center;
+    padding:20px 0 0 0;
+    margin-bottom:60px;
+}
+.menu_season_list li a{
+    display: block;
+    color: #919191;
+}
+.menu_season_list li img{
+    width:auto;
+    height:auto;
+    display: inline-block;
+    max-width:100%;
+}
+.menu_season_list_name{
+    height:28px;
+    font-size:16px;
+    color: #2d2d2d;
+    font-weight:normal;
+}
+.sc_menu_item_r{
+    padding:0px 24px 0 10px;
+    margin-top:45px;
+    min-height:1200px;
+    width:980px;
+    border-left:1px solid #dcdcdc;
+}
+.sc_menu_item_r_list{
+    margin:0 -26px 0 0;
+}
+.sc_menu_item_r_list li{
+    float: left;
+    text-align: center;
+    width:178px;
+    height:208px;
+    background-color: #fff;
+    margin:0 16px 16px 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.sc_menu_item_r_list li a{
+    display: block;
+}
+.sc_menu_item_r_list li img{
+    width:auto;
+    height:80px;
+    display: inline-block;
+    margin:30px auto 10px;
+}
+.sc_menu_item_r_list li .menu_season_list_dec{
+    color: #919191;
+    font-size:14px;
+}
+.sc_menu_item_r_list li.hover{
+    -webkit-box-shadow: 0 0 30px rgba(0,0,0,.1);
+    -moz-box-shadow: 0 0 30px rgba(0,0,0,.1);
+    box-shadow: 0 0 30px rgba(0,0,0,.1) ;
+
+}
+
+
+/*食材介绍*/
+
+.material_show_box{
+    position: relative;
+}
+.share_box{
+    position: absolute;
+    right:12px;
+    top:12px;
+}
+.share_box .jiathis_style_32x32  .jtico{
+    height:28px;
+    background: url("../images/share.png") no-repeat;
+}
+.jiathis_style  img{
+    width:auto;
+}
+.material_show{
+    margin:40px 0;
+    min-height:320px;
+    -webkit-box-shadow: 10px 10px 30px rgba(0,0,0,.1) ;
+    -moz-box-shadow: 10px 10px 30px rgba(0,0,0,.1);
+    box-shadow: 10px 10px 30px rgba(0,0,0,.1);
+}
+.material_show .material_show_pic{
+    width:388px;
+    min-height:320px;
+    overflow: hidden;
+    text-align: center;
+}
+.material_show_dec{
+    width:720px;
+    padding-left:36px;
+}
+.material_show_dec .material_title{
+    height:60px;
+    line-height:60px;
+}
+.material_show_dec .material_title .material_name{
+    font-weight:normal;
+    font-size:20px;
+
+}
+.material_show_dec .material_title .material_name,.material_page{
+    display: inline-block;
+}
+
+.material_show_text{
+    line-height:26px;
+    font-size:16px;
+}
+.material_other{
+    line-height:28px;
+    font-size:16px;
+    margin-top:20px;
+}
+
+/*食材制作*/
+.circle_dynamic_top{
+    height:36px;
+    line-height:36px;
+    border-bottom:1px solid #dcdcdc;
+    font-size:16px;
+}
+.circle_dynamic_top .circle_t{
+    font-weight:normal;
+    font-size:18px;
+    margin-right:20px;
+    padding-bottom: 1px;
+}
+.circle_dynamic_top .circle_t.active{
+    border-bottom:1px solid #f6a200;
+    padding-bottom:0;
+    color: #f6a200;
+}
+.circle_sort a{
+    margin-left:34px;
+    display: inline-block;
+}
+.circle_sort a.active{
+    color: #f6aa01;
+}
+
+/*营养功效*/
+.fd_yygx {
+    padding: 5px 15px 100px
+}
+
+.fd_yygx h4,.fd_yygx strong {
+    margin-top: 15px;
+    height: 38px;
+    line-height: 38px;
+    color: #f6aa01;
+    font-weight:normal;
+    font-size: 18px;
+}
+
+.fd_yygx p {
+    line-height: 28px
+}
+
+.fd_yycf {
+    padding: 10px 30px;
+    border: 1px solid #eaeaea
+}
+
+.fd_yycf li {
+    width: 25%;
+    height: 37px;
+    float: left;
+    line-height: 36px;
+    border-bottom: 1px dotted #eaeaea
+}
+
+.c_conlist li {
+    width: 190px
+}
+
+.c_conlist a h3,.c_conlist a strong {
+    _width: 136px
+}
+
+.c_scon3 a strong {
+    display: block;
+    _width: 50px
+}
+
+.n_sp_main_info {
+    float: right;
+    height: 75px;
+    overflow-y: scroll;
+    width: 510px
+}
+
+.n_sp_main_info p {
+    text-indent: 2em
+}
+
+.c_conlist p {
+    text-overflow: none!important;
+    white-space: none!important;
+    overflow: none!important
+}
+
+.c_conlist a h3 {
+    margin-right: 1px!important
+}
+
+.pic {
+    width: 190px;
+    height: 220px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: block
+}
+
+.c_conlist li {
+    margin: 15px 13px 0!important
+}
+
+.c_conlist a strong {
+    margin-right: 1px!important
+}
+
+
+
+.material_made_con_item{
+    display: none;
+}
+.material_made_con_item.active{
+    display: block;
+}
+.material_made_left{
+    width:922px;
+}
+.material_made_left .theme_list_con{
+    margin:25px -10px 0 0;
+}
+.material_made_left .theme_list_con li{
+    width:300px;
+    margin:0 10px 10px 0;
+    height:256px;
+}
+.material_made_left .theme_list_con .theme_list_pic{
+    width:300px;
+    height:197px;
+    position: relative;
+}
+.material_made_left .theme_list_con .theme_list_pic .theme_list_name{
+    position: absolute;
+    width:100%;
+    line-height:40px;
+    bottom:0;
+    left:0;
+    text-align: center;
+    color: #fff;
+    background: rgba(0,0,0,.5);
+}
+.material_made_left .theme_list_other_data{
+    margin:12px 0 0 0;
+}
+.material_made_right{
+    width:228px;
+}
+
+/*食材分类*/
+.material_class{
+    background: #f6f6f6;
+    padding:0 10px;
+    margin-top:12px;
+    margin-bottom:24px;
+}
+
+.material_class_dl .material_class_tit{
+    height:56px;
+    line-height:56px;
+    border-bottom:1px dashed #dcdcdc;
+    font-size:16px;
+    color: #2d2d2d;
+    position: relative;
+    cursor: pointer;
+}
+.material_class_dl dd{
+    padding:10px 0;
+    display: none;
+}
+.material_class_dl dd a{
+    float: left;
+    line-height:36px;
+    font-size:14px;
+    width:25%;
+    text-align: center;
+}
+.material_class_dl dd a:hover{
+    color: #f6aa01;
+}
+.more_btn{
+    position: absolute;
+    right:0;
+    top:50%;
+    margin-top:-6px;
+    width:12px;
+    height:12px;
+    line-height:12px;
+    border:1px solid #f6a200;
+    color: #f6a200;
+    text-align: center;
+
+}
+
+.season_material_list li{
+    float: left;
+    width:33.33%;
+    text-align: center;
+    margin:10px 0 10px 0;
+    line-height:40px;
+    padding:0 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.season_material_list li a{
+    display: block;
+    font-size:14px;
+}
+.season_material_list li a:hover{
+    color: #f6a200;
+}
+.season_material_list li .season_material_pic{
+    width:auto;
+    max-height:60px;
+    max-width:100%;
+}
+.ad{
+    margin:0 0 30px 0;
+}
+
+
+/*厨房百科详情*/
+._bread{
+    height: 48px;
+    line-height:48px;
+    border-bottom: 1px solid #dcdcdc;
+    color: #919191;
+    font-size:14px;
+}
+._bread a{
+    color: #919191;
+}
+._bk_content_tit{
+    padding:50px 0 36px 0;
+    text-align: center;
+    border-bottom:1px solid #dcdcdc;
+}
+._bk_content_tit h2{
+    font-size:18px;
+    font-weight:normal;
+    line-height:50px;
+}
+._bk_content_tit p{
+    font-size:14px;
+    color: #919191;
+}
+._bk_content_text p{
+    color: #2d2d2d;
+    font-size:14px;
+    line-height:28px;
+    margin:20px 0 0 0;
+}

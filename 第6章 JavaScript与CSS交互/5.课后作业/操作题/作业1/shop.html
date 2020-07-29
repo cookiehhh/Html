@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>贵美商城</title>
+<style type="text/css">
+td{text-align:center;}
+</style>
+<script type="text/javascript">
+function over(obj_small,obj_big){
+	obj_small.style.border="solid 1px #ff0000";
+	document.getElementById("big").src="images/"+obj_big;	
+	}
+	
+function out(obj_small){
+	obj_small.style.border=0;
+		}
+</script>
+</head>
+
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td colspan="5"><img src="images/show1_big.jpg" id="big" /></td>
+  </tr>
+  <tr>
+    <td style="height:60px;"><img src="images/show1.jpg" onmouseover="over(this,'show1_big.jpg')" onmouseout="out(this)"/></td>
+    <td><img src="images/show2.jpg" onmouseover="over(this,'show2_big.jpg')" onmouseout="out(this)"/></td>
+    <td><img src="images/show3.jpg" onmouseover="over(this,'show3_big.jpg')" onmouseout="out(this)"/></td>
+    <td><img src="images/show4.jpg" onmouseover="over(this,'show4_big.jpg')" onmouseout="out(this)"/></td>
+    <td><img src="images/show5.jpg" onmouseover="over(this,'show5_big.jpg')" onmouseout="out(this)"/></td>
+  </tr>
+</table>
+
+</body>
+</html>

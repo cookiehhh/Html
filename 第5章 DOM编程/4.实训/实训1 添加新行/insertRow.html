@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>添加新行</title>
+<script type="text/javascript">
+function inRow(){
+var NewRow=document.getElementById("myTable").insertRow(0);
+var x=NewRow.insertCell(0);
+var y=NewRow.insertCell(1);
+x.innerHTML="新行 Cell1";
+y.innerHTML="新行 Cell2";
+
+	}
+</script>
+</head>
+
+<body>
+<table style="width:500px;" border="1" cellspacing="0" cellpadding="0" id="myTable">
+  <tr>
+    <td>Row1 cell1</td>
+    <td>Row1 cell2</td>
+  </tr>
+  <tr>
+    <td>Row2 cell1</td>
+    <td>Row2 cell2</td>
+  </tr>
+  <tr>
+    <td>Row3 cell1</td>
+    <td>Row3 cell2</td>
+  </tr>
+</table>
+<input id="btn" value="插入新行" onclick="inRow()" type="button" />
+
+</body>
+</html>

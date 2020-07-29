@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>删除图片</title>
+
+</head>
+
+<body>
+<input id="btn" value="删除第一个图片" type="button"  onclick="del()"/><br />
+<img src="images/del_1.jpg" id="first" alt="图片"/>
+<img src="images/del_2.jpg" id="second" alt="图片">
+<script type="text/javascript">
+function del(){
+	var delNode=document.getElementById("first");
+	if(delNode){
+	document.body.removeChild(delNode);
+	}
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+/* CSS Document */
+#header{
+	width:100%;
+	height:80px;
+	background-color:#06799f;
+	position:fixed !important;
+	top:0px;
+	left:0px;
+	border-bottom:3px inset #0CC;
+	z-index:100;
+	}
+#header-content{
+	width:1024px; 
+	height:80px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+
+#header-content #logo{
+	width:80px;
+	height:50px;
+	float:left;
+	padding-top:15px;
+	}
+#header-content #header-menu{
+	width:560px;
+	height:40px;
+	padding-top:20px;
+	float:right;
+	}
+#header-content #header-menu li{ float:left;}
+/*#header-content #header-menu .menu-nav1 ul{ display:none; position:absolute;}
+#header-content #header-menu .menu-nav1 li:hover ul{ display:block;}
+#header-content #header-menu .menu-nav2 ul{ display:none; position:absolute;}
+#header-content #header-menu .menu-nav2 li:hover ul{ display:block;}
+#header-content #header-menu .menu-nav3 ul{ display:none; position:absolute;}
+#header-content #header-menu .menu-nav3 li:hover ul{ display:block;}
+#header-content #header-menu .menu-nav4 ul{ display:none; position:absolute;}
+#header-content #header-menu .menu-nav4 li:hover ul{ display:block;}*/
+#header-content #header-menu .child-menu{
+	width:140px;
+	height:40px;
+	float:left;
+	font-family:"微软雅黑";
+	font-size:14px;
+	color:#eee;
+	}
+#header-content #header-menu ul li{
+	position:relative;
+	}
+#header-content  .menu-nav-content{
+	width:600px;
+	height:150px;
+	margin-top:30px;
+	position:absolute;
+	top:39px;/*menu-hover 要移上1px移上才可实现hover功能*/
+	right:0px;
+	z-index:5;
+	}
+#header-content  .menu-nav-content-category{
+	width:580px;
+	height:165px;
+	border-radius:10px;
+	box-shadow:2px 2px 2px 1px rgba(0,0,0,0.3);
+	background-color:#EEE;
+	float:left;
+	behavior:url(../PIE/PIE.htc); 
+	}
+#header-content  .menu-nav-content-category dt,dd{
+	font-size:12px;
+	}
+#header-content  .menu-nav-content-category dd{
+	height:25px;
+	line-height:25px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	}
+#header-content .menu-nav-content-category img{
+	width:120px;
+	height:90px;
+	padding-right:5px;
+	padding-top:10px;
+	}	
+
+
+#header-content #title-set-border{
+	width:560px;
+	height:20px;
+	float:right;}
+#header-content #title-set{
+	width:180px;
+	height:20px;
+	margin-left:20px;
+	float:right;
+	font-size:12px;
+	font-family:"微软雅黑";
+	text-align:center;
+	background-image:url(../images/title-set.png);
+	background-repeat:no-repeat;
+	}
+#header-content #title-set a{
+	color:#EEE;}
+#header-content #title-set a:hover{
+	color:#ff2800;}
+
+	
+/*-----------------------------------------*/	
+#footer{
+	width:100%;
+	height:200px;
+	float:left;
+	margin-top:20px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#444;
+	border-top:5px inset #FC0;
+	}
+#footer-main-content{
+	width:960px;
+	height:200px;
+	}
+#footer-content-head{
+	width:960px;
+	height:150px;
+	}
+#footer-content-head p{
+	font-size:12px;
+	}
+#footer-content-head .foot-content{
+	width:230px;
+	height:120px;
+	margin-top:20px;
+	margin-left:20px;
+	border-left:1px dashed #AAA;
+	}
+#footer-content-foot{
+	width:960px;
+	height:30px;
+	}
+#footer-content-foot p{
+	font-size:12px;
+	text-align:center;
+	padding-top:10px;
+	}

@@ -1,0 +1,638 @@
+﻿<!DOCTYPE html><html lang="zh-cn" class="do-cke"><head><base href="/"><meta charset="UTF-8"><link rel="dns-prefetch" href="//st.styleweb.cn"><link rel="dns-prefetch" href="//image.styleweb.cn"><meta name="renderer" content="webkit"><meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui"><meta name="applicable-device" content="pc,mobile"><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"><!--[if lt IE 9]><meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE"><![endif]--><title>认识编辑器-竹子建站</title><meta name="robots" content="all"><style>.wow {visibility: hidden;}</style><!--[if lt IE 9]><style>.wow {visibility: visible;}</style><![endif]--><link href="//bk.st.styleweb.com.cn/editor/??do-basic.css,do-layout.css,do-form.css,do-element.css,element/do-tabText.css,js/wow/animate.css?2018121713481" rel="stylesheet" type="text/css"><link href="//bk.st.styleweb.com.cn/editor/js/froala/css/??froala_style.min.css,plugins/image.min.css,plugins/table.min.css,plugins/colors.min.css?2018121713481" rel="stylesheet" type="text/css"><link href="//bk.st.styleweb.com.cn/editor/webfonts/style.css?2018121713481" rel="stylesheet" type="text/css"><style>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ #do-m-menustate:checked ~ .do-nav-m .do-nav-m-title,#do-m-menustate ~ .do-nav-m .do-nav-m-title { background-color:rgba(0, 0, 0, 0.96)!important; }.do-nav-m-bar { background-color:rgb(0, 0, 0)!important; }.do-site-name *,.do-nav-m-ul li a,.do-nav-m-ul .icon-isSub:before { color:rgb(255, 255, 255); }.do-nav-m-ul li a { font-size:14px; }.do-m-menu-btn span { background-color:rgb(255, 255, 255)!important; }.do-nav-m-ul > li > a,.do-nav-m-ul > li > ul { border-bottom-color:rgb(51, 51, 51); }.do-nav-m .do-site-name img { height:28px; }.do-nav-m .do-nav-page-name { color:rgb(255, 255, 255); }
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+
+ 
+ .jiageNav{text-align: center}
+.jiageNav .z-sub-nav li{margin: 0 10px}
+.jiageNav .z-sub-nav a{background-color: #eee;height: 40px!important;line-height: 40px!important;padding:0 20px!important}
+.jiageNav .z-sub-nav li.active a{background-color: #42be51;color: #fff}
+@media only screen and (max-width: 640px){
+ .do-element-text{
+ -webkit-overflow-scrolling: touch;
+ overflow-x: auto;
+ }
+ .do-element-text .do-html-content > table {min-width: 1200px}
+}
+
+.do-header.open > .do-area .bgcolor{background-color: rgba(51,51,51,.9)!important;}
+
+.huzi-anli .do-element-media-content.sm{margin: -26px;}
+.huzi-anli .do-element-media-content.sm ul li{padding: 26px;}
+
+
+
+ .huzi-fun .do-title-content{text-align: center;}
+ .huzi-fun .do-media-image{padding-top: 80px!important;}
+ .huzi-beishu .do-media-image-box,.huzi-fun .do-middle{width: 80px;margin: auto;border-radius: 100%;}
+
+.huzi-beishu .do-media-image-box{-webkit-mask-image: -webkit-radial-gradient(circle, white, black);}
+/*.huzi-beishu,.huzi-beishu .swiper-container-horizontal{overflow: visible!important;}*/
+.huzi-beishu .swiper-container-horizontal>.swiper-pagination{bottom: -30px;}
+.huzi-beishu .swiper-pagination-bullet{background-color: rgba(255,255,255,.4);}
+.huzi-beishu .swiper-pagination-bullet-active{background-color:#fff;}
+
+
+.huzi-anli .swiper-button-next,.huzi-anli .swiper-button-prev,
+.huzi-anli .swiper-button-next:hover,.huzi-anli .swiper-button-prev:hover{
+ background-color: transparent;background-size:100px auto;width: 40px;height: 100px;
+ margin-top: -50px
+}
+.huzi-anli .swiper-button-next{background-image:url('//bk.image.styleweb.com.cn/2016/04/25/a6cfa253568afa4f616abb3487c820f2.png');}
+.huzi-anli .swiper-button-prev{background-image: url('//bk.image.styleweb.com.cn/2016/04/25/af34fed73bb248f69a25f95b6df8ea24.png');}
+.huzi-anli .do-list-swiper{width: 1200px;margin: auto;}
+
+.huzi-beishu .swiper-button-next,.huzi-beishu .swiper-button-prev,
+.huzi-beishu .swiper-button-next:hover,.huzi-beishu .swiper-button-prev:hover{background-color: transparent;background-size:60px auto;}
+.huzi-beishu .swiper-button-next{background-image:url('//bk.image.styleweb.com.cn/2016/04/25/21ef7d80e92d5f2a84b4ebb6172dff87.svg');}
+.huzi-beishu .swiper-button-prev{background-image: url('//bk.image.styleweb.com.cn/2016/04/25/f45b95020d4065ec8faeb8c80af0d524.svg');}
+.do-swiper > .swiper-pagination{bottom: -15px}
+@media only screen and (min-width: 800px){
+ 
+ .huzi-fun,.huzi-hezuo,.huzi-slidehover,.huzi-slidehover .swiper-container-horizontal{overflow: visible!important;}
+ .huzi-fun .do-element-media-ul{ border-right: 1px solid #eee;
+ border-bottom: 1px solid #eee;}
+ .huzi-fun .do-element-media-conter,.huzi-hezuo .do-element-media-conter,.huzi-slidehover .do-element-media-conter{transition: all .5s;}
+ .huzi-fun .do-element-media-conter{border-left: 1px solid #eee;border-top: 1px solid #eee;padding: 59px 20px;}
+ .huzi-fun .do-element-media-conter:hover,
+ .huzi-hezuo .do-element-media-conter:hover,
+ .huzi-slidehover .do-element-media-conter{
+ -webkit-box-shadow: rgba(0,0,0,.2) 0px 0px 30px;
+ -moz-box-shadow:rgba(0,0,0,.2) 0px 0px 30px;
+ box-shadow:rgba(0,0,0,.2) 0px 0px 30px;
+ }
+
+ .huzi-slidehover .do-element-media-conter:hover{
+ -webkit-box-shadow: rgba(0,0,0,.5) 0px 0px 50px;
+ -moz-box-shadow:rgba(0,0,0,.5) 0px 0px 50px;
+ box-shadow:rgba(0,0,0,.5) 0px 0px 50px;
+ }
+ .huzi-login{height:200px}
+}
+@media only screen and (min-height: 920px){
+ .do-page-6407 .do-banner .do-row-one{height: calc(100vh - 200px);}
+}
+.zhuzi-slidetext{text-align: center;position: relative;z-index: 3;color: #fff}
+.zhuzi-slidetext p{text-align: center;font-size: 16px}
+.do-form-index >*{vertical-align: middle;}
+.do-form-index .do-input-text{font-size: 16px; border: none;border-radius:100px;background-color: rgba(255,255,255,.2);height: 44px;line-height:44px;padding: 6px 32px;margin-right: 10px;color: #333;width: 300px}
+.do-form-index .do-input-text:focus{background-color: #fff;color: #333}
+
+.do-form-index .do-input-text::-webkit-input-placeholder { /* WebKit browsers */
+color: #fff;
+}
+
+.do-form-index .do-input-text:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+color: #fff;
+}
+.do-form-index .do-input-text::-moz-placeholder { /* Mozilla Firefox 19+ */
+color: #fff;
+}
+.do-form-index .do-input-text:-ms-input-placeholder { /* Internet Explorer 10+ */
+color: #fff;
+}
+
+.do-form-index .do-input-text:focus::-webkit-input-placeholder { /* WebKit browsers */
+color: #999;
+}
+.do-form-index .do-input-text:focus:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+color: #999;
+}
+.do-form-index .do-input-text:focus::-moz-placeholder { /* Mozilla Firefox 19+ */
+color: #999;
+}
+.do-form-index .do-input-text:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
+color: #999;
+}
+.zhuzi-slidetext .btn{color: #fff;border: 1px solid rgba(255,255,255,.5);border-radius:100px;padding: 0 30px;height: 44px;line-height: 42px; font-size: 16px; cursor:pointer;background-color: transparent;}
+.zhuzi-slidetext .btn:hover,.zhuzi-slidetext .btn:active{background-color:rgba(255,255,255,.2);}
+.do-pop-reg{display: none;}
+.do-pop-reg:before{
+ width:0;
+ height:0;
+ border-left:20px solid transparent;
+ border-right:20px solid transparent;
+ border-bottom:20px solid #000;content: "";position: absolute;top: -10px;left:50%;margin-left: -20px}
+
+.do-pop-reg .form-msg-tip,.do-pop-reg .form-msg{color: #eee;margin-bottom:20px}
+.do-pop-reg{background-color:rgba(0,0,0,.98);position: absolute;z-index: 999; top:60px;left: 50%;width:380px;margin-left: -190px;border-radius:8px;padding: 25px}
+.do-pop-reg .input-text,.do-pop-reg .item-sendcode{border:none;border-radius: 0; border-bottom:1px solid rgba(255,255,255,.3);background-color:transparent;width: 100%;height: 42px;padding-left:8px; color: #fff}
+.item-submit{background-color:#50C165;color: #fff;width: 100%;height: 46px;font-size: 18px;border-radius: 5px}
+.do-pop-reg .item-sendcode{height: 40px;border-left:1px solid rgba(255,255,255,.2);border-bottom:1px solid rgba(255,255,255,.2);position: relative;background-color: rgba(255,255,255,.1);}
+.do-pop-reg .form-item{margin: 8px 0}
+.do-pop-reg .form-item *{vertical-align:bottom;}
+
+
+.do-sns-login{display: inline-block;vertical-align: middle;padding: 0 30px}
+.do-sns-login span{ margin-right: 20px;cursor: pointer;}
+.do-sns-login i{font-size: 22px;margin-right: 6px;vertical-align: middle;}
+
+.huzi-hdlogin .zhuzi-slidetext{text-align: left;}
+.huzi-hdlogin .do-sns-login{padding:20px 0 0;display: block;}
+
+
+.do-btn,.btn-fancy{background: #42be51;display: inline-block;
+ -webkit-transition: border-color .4s,color .4s;
+ -moz-transition: border-color .4s,color .4s;
+ transition: border-color .4s,color .4s;
+ border: 0;
+ color: inherit;
+ vertical-align: middle;
+ position: relative;
+ z-index: 1;color: #fff;
+ -webkit-backface-visibility: hidden;
+ -moz-osx-font-smoothing: grayscale;}
+.do-btn,.btn-fancy, .do-btn::before,.btn-fancy::before{-webkit-transition-timing-function: cubic-bezier(0.2,1,.3,1);
+ -moz-transition-timing-function: cubic-bezier(0.2,1,.3,1);
+ transition-timing-function: cubic-bezier(0.2,1,.3,1);}
+.do-btn::before,.btn-fancy::before {
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ border-radius: 25px;
+ background: #1a7c29;
+ z-index: -1;
+ opacity: 0;
+ -webkit-transform: scale3d(0.7,1,1);
+ -moz-transform: scale3d(0.7,1,1);
+ -ms-transform: scale3d(0.7,1,1);
+ -o-transform: scale3d(0.7,1,1);
+ transform: scale3d(0.7,1,1);
+ -webkit-transition: -webkit-transform .4s,opacity .4s;
+ -moz-transition: -moz-transform .4s,opacity .4s;
+ transition: transform .4s,opacity .4s;
+ -webkit-transition-timing-function: cubic-bezier(0.2,1,.3,1);
+ -moz-transition-timing-function: cubic-bezier(0.2,1,.3,1);
+ transition-timing-function: cubic-bezier(0.2,1,.3,1);}
+.do-btn:hover::before,.btn-fancy:hover::before {
+ opacity: 1;
+ -webkit-transform: translate3d(0,0,0);
+ -moz-transform: translate3d(0,0,0);
+ -ms-transform: translate3d(0,0,0);
+ -o-transform: translate3d(0,0,0);
+ transform: translate3d(0,0,0);
+}
+
+@media only screen and (max-width: 800px){
+ .do-form-index{padding: 0 10px}
+ .do-pop-reg .item-sendcode{height: 41px}
+ .do-pop-reg .form-msg-tip{font-size: 13px}
+ .do-form-index .do-input-text{width: 100%;margin-bottom: 20px;text-align: center;}
+ .do-form-index .btn{width: 100%}
+ .layui-layer-hui{left:20px!important;right: 20px!important;min-width: auto;}
+ .do-pop-reg{width: 92%;left: 50%!important; margin-left: -46%;top:110px;padding: 15px;margin-bottom: 15px}
+ .do-sns-login{padding: 18px 0 10px;text-align: center;}
+ .huzi-login .do-text{padding: 12px 0;}
+ .huzi-fun .do-element-media-conter{padding: 6px 0}
+ .do-area-full .do-list{padding: 0 15px}
+ /*.do-banner h1{font-size: 18px!important}
+ .do-banner p span{font-size: 12px!important}*/
+}
+.do-container{overflow: hidden;}
+.huzi-slidehover .swiper-container-horizontal>.swiper-pagination{bottom: -30px;}
+.huzi-areaWhite{background-color: #fff;border-radius:8px;color: #333}
+.huzi-ftLogin .zhuzi-slidetext{color: #666;}
+.huzi-ftLogin .do-sns-login i{color: #aaa}
+.huzi-ftLogin .do-sns-login span:hover i{color: #42be51}
+.huzi-ftLogin .do-form-index .do-input-text{border: 1px solid #86d173;text-align: center;}
+.huzi-ftLogin .zhuzi-slidetext .btn{background-color: #42be51;border: none;vertical-align: top;}
+
+.do-form-indexFt .do-input-text::-webkit-input-placeholder{color: #999}
+.do-form-indexFt .do-input-text:-moz-placeholder{color: #999}
+.do-form-indexFt .do-input-text::-moz-placeholder{color: #999}
+.do-form-indexFt .do-input-text:-ms-input-placeholder {color: #999}
+
+
+
+.parallax{visibility: hidden;}
+ .parallaxOpen{visibility: visible;}
+
+ .vdemo{position: absolute;top: 55%;right: 5%;width: 40%;padding-top: 46%;margin-top:-23%}
+ .vdemo .v{position: absolute;z-index: 2; background-position: 50% 50%;background-repeat: no-repeat;background-size: 100% auto;
+ transform:translate3d(0,0,0)}
+ .parallax-pc{ top: 0;right: 0;width: 45%;height: 100%;}
+ .parallax-pad{left:0;top: 7%;width: 50%;height: 100%;}
+ .parallax-phone{left:30%;top:7%;width: 28%;height: 50%;}
+ .circle {
+ height:20px;
+ width:20px;
+ border-radius:50%;
+ background-color:rgba(230,230,230,.5);
+ position:absolute;
+ top:53%;
+ left:50%;
+ margin: -10px 0 0 -10px;z-index: 1;
+ -webkit-transition:height .25s ease, width .25s ease;
+ transition:height .25s ease, width .25s ease;
+ 
+ -webkit-transform:translate(-50%,-50%);
+ transform:translate(-50%,-50%);
+ }
+.circle>div{width:50px;height: 1px;background-color:rgba(230,230,230,.5);transform-origin:0 0;position: absolute;}
+.circle .circle-line1{transform:rotate(-120deg);left:0px;top: 0}
+.circle .circle-line2{transform:rotate(10deg);left:23px;top: 12px}
+.circle .circle-line3{transform:rotate(130deg);left:0px;top: 20px}
+.circle:before,
+.circle:after {
+ content:'';
+ display:block;
+ position:absolute;
+ left: 50%;top: 50%;
+ border-radius:50%;
+ border:1px solid rgba(230,230,230,.5);
+}
+.circle:before {
+ -webkit-animation: ripple 2s linear infinite;
+ animation: ripple 2s linear infinite;
+}
+.circle:after {
+ -webkit-animation: ripple 2s linear 1s infinite;
+ animation: ripple 2s linear 1s infinite;
+}
+@-webkit-keyframes ripple{
+ 0% {width:20px;height: 20px;margin: -10px 0 0 -10px}
+ 75% {width:300px;height: 300px;margin: -150px 0 0 -150px}
+ 100% {width:600px;height: 600px;margin: -300px 0 0 -300px}
+}
+
+@keyframes ripple{
+ 0% {width:20px;height: 20px;margin: -10px 0 0 -10px}
+ 75% {width:300px;height: 300px;margin: -150px 0 0 -150px}
+ 100% {width:600px;height: 600px;margin: -300px 0 0 -300px}
+}
+.zhuziban{padding-left:100px}
+.slogin a{color: #38ba56;font-size: 18px;text-decoration:underline}
+
+.hd-login-w{text-align: center;}
+ .hd-login,.hd-reg{background-color: #fff;color: #666;padding: 6px 22px;margin: 0 6px;border-radius:100px}
+ .hd-login-w a:hover{opacity: .8}
+
+@media only screen and (max-width:800px){
+ .vdemo{width:100%;position:relative;left: 0;top:0;right: 0; padding-top: 100%;margin:auto}
+ .circle{top: 55%;left: 53%;}
+ .zhuziban{padding-left:0px;text-align: center;padding: 0 10px}
+ .slogin{text-align: center;display: block;padding:0 0 15px;margin:0!important}
+
+ .do-nav-m-ul > li > a,.do-nav-m-ul > li > ul{border-bottom: 1px solid rgba(255,255,255,.5);}
+ .do-nav-m-ul > li > a,.icon-isSub:before{color: rgba(255,255,255,.9);}
+
+ #do-m-menustate:checked ~ .do-nav-m,#do-m-menustate ~ .do-nav-m{background: #333!important;}
+ #do-m-menustate ~ .open {background-color: rgba(51,51,51,.9)!important;}
+
+ .huzi-ftLogin{padding: 0 16px;}
+ .huzi-ftLogin .btn{width: 100%!important;}
+
+ .huzi-beishu .swiper-button-white{display: none!important;}
+
+}
+
+@media only screen and (max-width:800px){
+.ly-bannerfrom .form-control {
+ min-width: 340px!important;}
+}
+
+
+ .wl-none .do-btn::before, .btn-fancy::before{background: transparent;}
+
+ 
+
+ </style><script type="text/javascript">
+ var StaticUrl = '\/\/bk.st.styleweb.com.cn\/';
+ var sUserAgent= navigator.userAgent.toLowerCase();
+ var bIsIpad= sUserAgent.match(/ipad/i) == "ipad";
+ var bIsIphoneOs= sUserAgent.match(/iphone os/i) == "iphone os";
+ var bIsMidp= sUserAgent.match(/midp/i) == "midp";
+ var bIsUc7= sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+ var bIsUc= sUserAgent.match(/ucweb/i) == "ucweb";
+ var bIsAndroid= sUserAgent.match(/android/i) == "android";
+ var bIsCE= sUserAgent.match(/windows ce/i) == "windows ce";
+ var bIsWM= sUserAgent.match(/windows mobile/i) == "windows mobile";
+ 
+ var browser=navigator.appName;
+ var b_version=navigator.appVersion;
+ var version=b_version.split(";");
+ var _vm = {};
+ var trim_Version= version[1] ? version[1].replace(/[ ]/g,"") : "";
+ var isIe = {
+ ie6:browser=="Microsoft Internet Explorer" && trim_Version=="MSIE6.0",
+ ie7:browser=="Microsoft Internet Explorer" && trim_Version=="MSIE7.0",
+ ie8:browser=="Microsoft Internet Explorer" && trim_Version=="MSIE8.0",
+ ie9:browser=="Microsoft Internet Explorer" && trim_Version=="MSIE9.0"
+ }
+
+ function isWeiXin(){
+ var ua = window.navigator.userAgent.toLowerCase();
+ if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+ return true;
+ }else{
+ return false;
+ }
+ }
+ 
+ var version = {'css':'2018121713481','js' :'2018121713482'};
+ 
+ 
+ function setCookie(c_name,value,expiredays)
+ {
+ var exdate=new Date()
+ exdate.setDate(exdate.getDate()+expiredays)
+ document.cookie=c_name+ "=" +escape(value)+";path=/"+((expiredays==null) ? "" : ";expires="+exdate.toGMTString())
+ }
+
+ 
+ setCookie("time_offset", -new Date().getTimezoneOffset()/60);
+</script><script src="//bk.st.styleweb.com.cn/editor/js/jquery.min.js"></script><meta name="baidu-site-verification" content="S068Fqv59K"><script type="text/javascript">
+
+
+ var windowName = window.name;
+ if (windowName && (windowName == 'weixinLogin' || windowName == 'qqLogin')) {
+ window.opener.location.href="http://uc.zhuzi.me/user";
+ window.close();
+ }
+</script><!-- GrowingIO Analytics code version 2.1 --><!-- Copyright 2015-2018 GrowingIO, Inc. More info available at http://www.growingio.com --><script type='text/javascript'>
+!function(e,t,n,g,i){e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},n=t.createElement("script"),tag=t.getElementsByTagName("script")[0],n.async=1,n.src=('https:'==document.location.protocol?'https://':'http://')+g,tag.parentNode.insertBefore(n,tag)}(window,document,"script","assets.growingio.com/2.1/gio.js","gio");
+ gio('init','a02c18491f091069', {});
+
+//custom page code begin here
+
+//custom page code end here
+
+gio('send');
+
+</script><!-- End GrowingIO Analytics code version: 2.1 --><link rel="shortcut icon" type="image/ico" href=""><link rel="stylesheet" href="//bk.st.styleweb.com.cn/templates/default_test/style.css?2018121713481"><style>
+ 
+ #header_448776_0 .do-area-bg-conter .bgcolor { background-color:rgb(51, 51, 51); }#header_448776_0 .do-row-one,#header_448776_0 .do-element-text { color:rgb(255, 255, 255); }
+ 
+ #banner_448776_0 > .do-area-bg .do-area-bg-conter,#banner_448776_0 .fp-tableCell > .do-area-bg .do-area-bg-conter { background-attachment:initial; }#banner_448776_0 > .do-area-bg .bgcolor,#banner_448776_0 .fp-tableCell > .do-area-bg .bgcolor { background-color:rgba(0, 0, 0, 0.31); }.lt-ie9 #banner_448776_0 > .do-area-bg .bgcolor,#banner_448776_0 .fp-tableCell > .do-area-bg .bgcolor { filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000) }#banner_448776_0 .do-row-one,#banner_448776_0 .do-element-text { color:rgb(255, 255, 255); }
+ 
+ 
+ 
+ #footer_448776_0 .do-area-bg-conter .bgcolor { background-color:rgb(69, 69, 69); }#footer_448776_0 .do-row-one,#footer_448776_0 .do-element-text { color:rgb(255, 255, 255); }
+ </style><script>
+ (function(){
+ var obj = (document.getElementsByTagName('head')[0]||body),
+ js = null;
+ if(location.search=="?debug=true"){
+ js = document.createElement('script');
+ js.type='text/javascript';
+ js.onload = function(){
+ new VConsole();
+ };
+ js.onerror = function(e){
+ alert("vonsole.js load error,err:" + e);
+ };
+ js.src = "\/\/bk.st.styleweb.com.cn\/editor/js/vconsole.min.js";
+ obj.appendChild(js);
+ }
+ })();
+
+ var jsVersion = '2018121713482',
+ cssVersion = '2018121713481';
+ </script></head><body do-page-width="1" class="fr-element fr-view do-page-448776	 do-phoneBottom" do-phone-nav="do-drop-full" do-phonenav-slip-direction="left-to-right" do-phonenav-btnalign="do-navBtn-right"><div style="display: none"><img src="//bk.image.styleweb.com.cn/2016/08/13/31bb737fb4f6dbd24081a34b286673ff.png?imageView2/1/w/500/h/500"></div><div class="do-nav-mwp do-nav-phone"><input type="checkbox" id="do-m-menustate" class="do-m-menustate"><div class="do-nav-m do-nav-no-fixed"><div class="do-nav-m-title animate"><div class="do-site-name"><h3><a href="..\index.html"><img class="animate" src="//bk.image.styleweb.com.cn/2018/10/26/3917_jnpejrr1.png?imageView2/2/w/600" alt="竹子建站"></a></h3></div><div class="do-m-menustate do-btn-line do-nav-btn"><label class="do-m-menu-btn" for="do-m-menustate"><span></span><span></span><span></span></label></div></div><div class="do-phoneNav-overlay"></div><div class="do-nav-m-bar animate"><ul class="do-nav-m-ul clearfix"><li class="nav7553" data-id="7553"><a href="..\index.html"><span>首页</span></a></li><li class="nav7554" data-id="7554"><a href="http://uc.zhuzi.me/template"><span>模板</span></a></li><li class="nav7557" data-id="7557"><a href="..\case.html"><span>案例</span></a></li><li class="nav351421" data-id="351421"><a href="..\jiameng1.html"><span>加盟</span></a></li><li class="nav448575 active" data-id="448575"><a href="..\448575.html"><span>教程中心</span></a><input type="checkbox" id="inputNavSub448575" class="do-m-menustate do-m-sub"><label for="inputNavSub448575" class="icon-isSub"></label><ul class="z-nav-sub"></ul></li><li class="nav351256" data-id="351256"><a href="..\daijianfuwu.html"><span>代建服务</span></a></li><li class="nav7558" data-id="7558"><a href="..\about.html"><span>关于</span></a></li></ul><div class="do-site-name animate do-nav-m-bar-name"><h3></h3><h3><a href="..\index.html"><img class="animate"></a></h3></div></div></div></div><div class="do-adrift"><div class="do-popwximg" style="display:none"><div class="do-middle"><div class="do-middle-center"><img src="http://bk.image.styleweb.com.cn/2018/10/18/3917_jne1mixy.png" width="160"><p class="wxphone">长按二维码关注微信加好友</p></div></div><i class="icon-close do-close"></i></div><input type="checkbox" id="do-online-service" class="do-hide"><div class="do-online-service"><label for="do-online-service" class="do-online-service-btn icon-bubbles do-open "></label><div class="do-box"><div class="do-box-title ">在线咨询<label for="do-online-service" class="icon-close do-close"></label></div><div class="do-box-con do-bg-black1"><div class="do-box-item qq"><a href="//wpa.qq.com/msgrd?v=3&uin=1146513793&site=%e7%ab%b9%e5%ad%90%e5%bb%ba%e7%ab%99&menu=yes" target="_blank" class="on" title="" id="bizQQ_WPA"><i class="icon-qq"></i><span>1146513793</span><em>在线QQ</em></a></div><div class="do-box-item qq phoneNone"><a href="//wpa.qq.com/msgrd?v=3&uin=757528651&site=%e7%ab%b9%e5%ad%90%e5%bb%ba%e7%ab%99&menu=yes" target="_blank" class="on" title="" id="bizQQ_WPA"><i class="icon-qq"></i><span>757528651</span><em>在线QQ</em></a></div><div class="do-box-item qq phoneNone"><a href="//wpa.qq.com/msgrd?v=3&uin=562662184&site=%e7%ab%b9%e5%ad%90%e5%bb%ba%e7%ab%99&menu=yes" target="_blank" class="on" title="" id="bizQQ_WPA"><i class="icon-qq"></i><span>562662184</span><em>在线QQ</em></a></div><div class="do-box-item mail"><a href="mailto:partner@zhuzi.me" title="" class="on"><i class="icon-mail"></i><span>partner@zhuzi.me</span></a></div><div class="do-box-item tel"><h6><i class="icon-phone"></i> 联系电话</h6><h4><a href="tel:028-678%2077888"><i class="icon-phone"></i><span>028-678 77888</span><em>拨打电话</em></a></h4></div><div class="do-box-item sms"><a href="sms:028-678%2077888"><i class="icon-mail"></i><em>发送短信</em></a></div><div class="do-box-item qr"><a href="javascript:;" class="weixinBtn phoneOff"><i class="icon-weixin"></i><em>微信</em></a><div class="wximg phoneNone"><img src="http://bk.image.styleweb.com.cn/2018/10/18/3917_jne1mixy.png" width="100%"><p class="wxpc">微信扫一扫</p><p class="wxphone">长按二维码关注微信加好友</p></div></div></div></div></div><div class="do-gotop" title="返回顶部"><i class="icon-to-top"></i></div></div><div class="do-container animate"><div class=" do-section fp-auto-height do-header" do-header-fixed="" data-fullname="TOP"><div class="do-area do-area-full" id="header_448776_0"><div class="do-area-bg"><div class="do-area-bg-conter"><div class="bgcolor"></div></div></div><div id="header_0" class="do-row do-row-one"><div class="do-row "><div class="do-col-12 do-H-c-0-1" id='H-c-0-1'><div class="do-panelcol"><div class="do-block  do-rows"><div class="do-row"><div class="do-col-2 do-H-c-0-1-2-3" id='H-c-0-1-2-3'><div class="do-panelcol"><div class="do-block     do-logo do-o1kx"><div do-logo="" class="do-logo"><div class="z-logo align-center size2"><a href="..\index.html" title=""><img src="//bk.image.styleweb.com.cn/2018/10/26/3917_jnpejrr1.png" alt=""></a></div></div></div></div></div><div class="do-col-10 do-H-c-0-1-2-5" id='H-c-0-1-2-5'><div class="do-panelcol"><div class="do-block  do-rows"><div class="do-row"><div class="do-col-7 do-H-c-0-1-2-5-6-7" id='H-c-0-1-2-5-6-7'><div class="do-panelcol"><div class="do-block     do-nav do-o1kv"><div class="z-nav align-center"><div class="z-nav-bar"><div class="z-nav-container"><ul class="z-nav-conter clearfix"><li class="nav7553" data-id="7553"><a href="..\index.html"><span>首页</span></a></li><li class="nav7554" data-id="7554"><a href="http://uc.zhuzi.me/template"><span>模板</span></a></li><li class="nav7557" data-id="7557"><a href="..\case.html"><span>案例</span></a></li><li class="nav351421" data-id="351421"><a href="..\jiameng1.html"><span>加盟</span></a></li><li class="nav448575 active" data-id="448575"><a href="..\448575.html"><span>教程中心</span></a><input type="checkbox" id="inputNavSub448575" class="do-m-menustate do-m-sub"><label for="inputNavSub448575" class="icon-isSub"></label><ul class="z-nav-sub"></ul></li><li class="nav351256" data-id="351256"><a href="..\daijianfuwu.html"><span>代建服务</span></a></li><li class="nav7558" data-id="7558"><a href="..\about.html"><span>关于</span></a></li></ul></div></div><div class="z-nav-btn"><span class="line-1"></span><span class="line-2"></span><span class="line-3"></span></div></div><style>
+ .z-nav { text-align:center; }.z-nav-conter > li.active > a,.z-nav-conter > li:hover > a { background-color:rgba(57, 184, 77, 0);color:rgb(66, 190, 81); }.z-nav-conter > li:hover > a { background-color:rgba(107, 183, 119, 0);color:rgb(66, 190, 81); }.z-nav-conter > li > a { color:rgb(255, 255, 255);font-size:16px;line-height:2.76em; }
+</style></div></div></div><div class="do-col-3 do-H-c-0-1-2-5-6-9" id='H-c-0-1-2-5-6-9'><div class="do-panelcol"><div class="do-block     do-code do-oi0b"><div class="do-element-code"><div class="do-element-code-content"><div class="hd-login-w"><div class="do-form-index"><a href="http://uc.zhuzi.me/login" class="hd-login">登录</a><a href="http://uc.zhuzi.me/register" class="hd-reg">注册</a></div><div class="doAdminBtn" style="display:none;"><a href="http://uc.zhuzi.me/user" class="hd-login">管理</a><a href="http://uc.zhuzi.me/logout" class="hd-login do-logout">退出</a></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div><div class="do-section fp-auto-height do-banner" data-fullname="BANNER"><div class="do-area" id="banner_448776_0"><div class="do-area-bg   "><div class="do-area-bg-conter" style="background-image: url('http://bk.image.styleweb.com.cn/2018/7/26/13039_jk1zp7e1.jpg?imageMogr2/thumbnail/2000x2000/q/100');background-attachment:initial"><div class="bgcolor"></div></div></div><div id="banner_0" class="do-row do-row-one "><div class="do-row "><div class="do-col-12 do-B-c-17-18" id='B-c-17-18'><div class="do-panelcol"><div class="do-block     do-space do-wgq7j"><div class="do-element-space pc" style="padding-top:11.666666666666666%;"></div><div class="do-element-space phone" style="padding-top:18%;"></div></div><div class="do-block     do-text do-wgq7i"><div class="do-text-vvyn3"><div class="do-element-text do-element-general"><div class="do-element-text-content do-html"><div class="do-html-content"><h2 style="text-align:center"><span style="font-family: KaiTi; font-size: 48px;">教程中心</span></h2></div></div></div></div></div><div class="do-block     do-text do-wgq7h"><div class="do-text-vvymw"><div class="do-element-text do-element-general"><div class="do-element-text-content do-html"><div class="do-html-content"><h3 style="text-align: center; line-height: 1.8;"><span style="font-family: KaiTi; font-size: 22px;">可视化、可拖拽、可定制、响应式、全兼容，革命性的在线建站设计体验，创建漂亮、优雅、有价值的网站</span></h3></div></div></div></div></div><div class="do-block     do-space do-wgq7g"><div class="do-element-space pc" style="padding-top:3.3333333333333335%;"></div><div class="do-element-space phone" style="padding-top:5%;"></div></div><div class="do-block  do-rows"><div class="do-row"><div class="do-col-2 do-B-c-11-12-110-111" id='B-c-11-12-110-111'><div class="do-panelcol"><div class="do-block     do-space do-wgq7f"><div class="do-element-space" style="padding-top:5%;"></div></div></div></div><div class="do-col-10 do-B-c-11-12-113" id='B-c-11-12-113'><div class="do-panelcol"><div class="do-block  do-rows"><div class="do-row"><div class="do-col-7 do-B-c-11-12-113-120" id='B-c-11-12-113-120'><div class="do-panelcol"><div class="do-block     do-search do-wgq7e"><form action="/blogs/search.html?page_size=20" class="do-element-blogs-search m-b-md wl-form"><div class="input-group"><input type="text" name="keyword" class="form-control blogs-search-input						 input-lg						" placeholder="请输入您的问题"><span class="input-group-btn"><button type="submit" class="btn btn-default blogs-search-btn								 btn-lg								"><i class="icon-magnifier"></i></button></span></div></form><style>
+ .do-wgnzb .do-element-blogs-search .blogs-search-input { border-top-left-radius:30px;border-bottom-left-radius:30px; }.do-wgnzb .do-element-blogs-search .blogs-search-btn { background-color:rgb(38, 160, 49);color:rgb(255, 255, 255);border-top-right-radius:30px;border-bottom-right-radius:30px; }.do-wgnzb .do-element-blogs-search .blogs-search-btn:hover { background-color:rgb(68, 157, 68);color:rgb(255, 255, 255); }
+</style></div><div class="do-block     do-code do-wgq7d"><div class="do-element-code"><div class="do-element-code-content"><style>
+ /* .wl-form .form-control::-webkit-input-placeholder {font-size:14px;}*/
+ 
+input.form-control.blogs-search-input.input-lg {
+ font-size: 14px;
+}
+</style></div></div></div></div></div><div class="do-col-3 do-B-c-11-12-113-117-118" id='B-c-11-12-113-117-118'><div class="do-panelcol"><div class="do-block     do-space do-wgq7c"><div class="do-element-space" style="padding-top:5%;"></div></div></div></div></div></div></div></div></div></div><div class="do-block     do-code do-wgq7b"><div class="do-element-code"><div class="do-element-code-content"><!--<style>
+	.ly-bannerfrom .form-control{min-width: 600px;margin-right: 20px;}
+	.ly-bannerfrom [type="text"]{padding:25px 44px;}
+	.ly-bannerfrom .btn.btn-success{padding:15px 44px;}
+	.ly-bannerfrom .form-control{border-radius: 40px;background-color: rgba(255,255,255,0.6);box-shadow: inset 0 1px 1px rgba(0,0,0,0);border:0;}
+	.ly-bannerfrom .btn{border-radius: 40px;box-shadow: inset 0 1px 1px rgba(0,0,0,0);border:0;}
+	.ly-bannerfrom .form-control::-webkit-input-placeholder { color:#9eb7cb;font-size: 16px; }
+	.ly-bannerfrom .btn.btn-success{background-color:#33b73a!important;color:#fff;font-size: 16px; }
+	.ly-bannerfrom .btn-lg{padding:10px 30px;}
+
+
+
+.ly-bannerfrom .btn.btn-success {
+ background-color:#33b73a !important;
+}
+</style>--></div></div></div><div class="do-block     do-space do-wgq7a"><div class="do-element-space pc" style="padding-top:8.333333333333332%;"></div><div class="do-element-space phone" style="padding-top:13%;"></div></div></div></div></div></div></div></div><script type="text/javascript">
+var blogInfo = {id:'152136',title:'认识编辑器',url:window.location.href},
+	ImageUrl = "";
+</script><div class="do-body-content do-body do-area"><div class="do-row-one do-row"><div class="do-col-10"><div class="do-article"><div class="do-element-crumb" style="margin-bottom: 20px;"><ol class="breadcrumb"><li><a href="..\index.html">首页</a></li><li><a href="..\448575.html">				 					 	教程中心</a></li><li><a href="..\rumen.html">											 	快速入门教程</a></li></ol></div><div class="do-article-title"><h1>认识编辑器</h1><div class="do-bar clearfix"><div class="do-time inline" style="margin-right: 20px;"><span>发布时间：</span>2018-07-26 15:43						</div></div></div><div class="do-article-content clearfix"><p><img src="//bk.image.styleweb.com.cn/2018/7/26/jk298wlk.png" class="fr-dib"></p><p><img src="//bk.image.styleweb.com.cn/2018/7/26/jk299ije.png" class="fr-dib"><img src="//bk.image.styleweb.com.cn/2018/7/26/jk29a4jb.png" class="fr-dib"><br></p><p><img src="//bk.image.styleweb.com.cn/2018/7/26/jk29aqi6.png" class="fr-dib"><img src="//bk.image.styleweb.com.cn/2018/7/26/jk29b5yu.png" class="fr-dib"><br></p><p><br></p><p><br></p></div><div class="do-element-share do-3qlj3"><div class="do-element-share-content"><div class="preLogos bdsharebuttonbox do-icon-default-bg align-left" data-tag="share_newsShow"><label>分享：</label><a class="bds_sqq do-share-li" title="分享到QQ好友" data-cmd="sqq"><span class="do-share-icon icon-qq"></span></a><a class="bds_weixin do-share-li" title="分享到微信" data-cmd="weixin"><span class="do-share-icon icon-weixin"></span></a><a class="bds_qzone do-share-li" title="分享到QQ空间" data-cmd="qzone"><span class="do-share-icon icon-kongjian"></span></a><a class="bds_tsina do-share-li" title="分享到新浪微博" data-cmd="tsina"><span class="do-share-icon icon-weibo"></span></a><a class="bds_huaban do-share-li" title="分享到花瓣" data-cmd="huaban"><span class="do-share-icon icon-huaban"></span></a><a class="bds_fbook do-share-li" title="分享到facebook" data-cmd="fbook"><span class="do-share-icon icon-facebook"></span></a><a class="bds_twi do-share-li" title="分享到twitter" data-cmd="twi"><span class="do-share-icon icon-twitter"></span></a></div></div></div></div></div><div class="do-col-2"><div class="qrcode-box"><div id="qrcode" style="overflow: hidden;"></div><p class="align-center">扫一扫在手机上阅读本文章</p></div></div></div></div><script src="//bk.st.styleweb.com.cn/editor/js/qrcode.js"></script><script type="text/javascript">
+
+var dsThread = $(".ds-thread");
+if(dsThread.length){
+	dsThread.attr({
+		'data-thread-key':blogInfo.id,
+		'data-title':blogInfo.title,
+		'data-url':blogInfo.url
+	});
+}
+$(function(){
+	var qrcode = new QRCode(document.getElementById("qrcode"), {
+ width : 600,
+ height : 600
+ });
+ qrcode.makeCode(window.location.href);
+ 
+ var vods = $("zvod");
+ if(vods.length){
+ 	vods.each(function(i) {
+ 		var newHtml = this.outerHTML;
+ 		while(newHtml.indexOf('zvod') > 0) {
+ newHtml = newHtml.replace('zvod', 'iframe');
+ }
+ $(this).after(newHtml).remove();
+ 	});
+ }
+
+})
+	
+</script><style>
+	.do-3qlj3{border-top: 1px solid #eee;
+ padding-top: 16px;
+ margin-top: 26px;}
+	.do-3qlj3 .do-element-share-content .do-share-icon { border-radius:20px; }.do-3qlj3 .do-element-share-content .do-share-icon { font-size:16px; }.do-3qlj3 .do-element-share-content .do-share-title { color:rgb(67, 71, 72); }.do-3qlj3 .do-element-share-content .do-share-title { font-size:16px; }.do-3qlj3 .do-element-share-content .do-share-li { margin-right:8px; }
+</style><script>
+ window._bd_share_config = window._bd_share_config||{share:[]};
+ window._bd_share_config.share.push({tag:"share_newsShow", bdSize:"",bdPic:ImageUrl});
+	with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script><div class="do-footer"><div class="do-area" id="footer_448776_0"><div class="do-area-bg"><div class="do-area-bg-conter"><div class="bgcolor"></div></div></div><div id="footer_0" class="do-row do-row-one"><div class="do-row "><div class="do-col-12 do-F-c-97-98" id='F-c-97-98'><div class="do-panelcol"><div class="do-block     do-space do-ytmsb"><div class="do-element-space pc" style="padding-top:0.33333333333333337%;"></div><div class="do-element-space phone" style="padding-top:5%;"></div></div><div class="do-block     do-space do-ytmsa"><div class="do-element-space pc" style="padding-top:4.166666666666666%;"></div><div class="do-element-space phone" style="padding-top:5%;"></div></div><div class="do-block     do-text do-ytms9"><div class="do-text-gs9hq"><div class="do-element-text do-element-general"><div class="do-element-text-content do-html"><div class="do-html-content"><h4 style="text-align: center; letter-spacing: 3px;"><span style="color: rgb(255, 255, 255); font-size: 20px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, MicrosoftJhengHei, 华文细黑, STHeiti, MingLiu;">友情链接</span></h4></div></div></div></div></div><div class="do-block     do-space do-ytms8"><div class="do-element-space pc" style="padding-top:0.8333333333333334%;"></div><div class="do-element-space phone" style="padding-top:5%;"></div></div><div class="do-block     do-text do-ytms7"><div class="do-text-ytms7"><div class="do-element-text do-element-general"><div class="do-element-text-content do-html"><div class="do-html-content"><p style="text-align: center;"><a href="..\index.html" target="_blank"><span style="color: rgb(255, 255, 255); font-size: 12px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, MicrosoftJhengHei, 华文细黑, STHeiti, MingLiu;">企业网站建设</span></a><span style="font-family: 'Microsoft YaHei',微软雅黑,'MicrosoftJhengHei',华文细黑,STHeiti,MingLiu;"><span style="font-size: 12px;"><span style="color: rgb(255, 255, 255);">&nbsp;&nbsp;</span><a href="..\index.html" target="_blank"><span style="color: rgb(255, 255, 255);">自助建站</span></a><span style="color: rgb(255, 255, 255);">&nbsp; <a href="http://www.jinpai.com" target="_blank">金牌拍卖</a>&nbsp; &nbsp;<a href="http://www.cssmoban.com" target="_blank">模板之家</a>&nbsp; <a href="http://www.tiqiu.com" target="_blank">体球网</a> &nbsp;</span></span></span><span style="color: rgb(255, 255, 255); font-size: 12px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, MicrosoftJhengHei, 华文细黑, STHeiti, MingLiu;"><a href="http://www.051018.com" target="_blank">无锡网站建设</a> &nbsp;</span><span style="color: rgb(255, 255, 255); font-size: 12px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, MicrosoftJhengHei, 华文细黑, STHeiti, MingLiu;"><a href="http://www.hema.la" target="_blank">成都网站建设</a> &nbsp;</span><span style="color: rgb(255, 255, 255); font-size: 12px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, MicrosoftJhengHei, 华文细黑, STHeiti, MingLiu;"><a href="http://www.tfzd.com.cn/" target="_blank">成都品牌设计</a>&nbsp; &nbsp;</span><a href="http://www.dafenqiedu.cn/" target="_blank"><span style="color: rgb(255, 255, 255); font-size: 12px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, MicrosoftJhengHei, 华文细黑, STHeiti, MingLiu;">成都艺考文化课培训</span></a></p></div></div></div></div></div><div class="do-block     do-text do-zpowb"><div class="do-text-zpowb"><div class="do-element-text do-element-general"><div class="do-element-text-content do-html"><div class="do-html-content"><p style="text-align: center;"><a href="..\jiaoyu.html"><span style="font-size: 12px;">教育培训</span></a></p></div></div></div></div></div><div class="do-block     do-space do-ytms6"><div class="do-element-space pc" style="padding-top:0.8333333333333334%;"></div><div class="do-element-space phone" style="padding-top:5%;"></div></div><div class="do-block     do-text do-ytms5"><div class="do-text-gs9hn"><div class="do-element-text do-element-general"><div class="do-element-text-content do-html"><div class="do-html-content"><p style="text-align: center; letter-spacing: 1px; line-height: 1.2;"><span style="font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, MicrosoftJhengHei, 华文细黑, STHeiti, MingLiu; font-size: 12px;">2014-2017 &nbsp; 成都创享兄弟科技有限公司</span></p><p style="text-align: center; letter-spacing: 1px; line-height: 1.2;"><span style="font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, MicrosoftJhengHei, 华文细黑, STHeiti, MingLiu; font-size: 12px;">© Zhuzi.me 版权所有 </span><a href="http://www.miitbeian.gov.cn" target="_blank"><span style="font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, MicrosoftJhengHei, 华文细黑, STHeiti, MingLiu; font-size: 12px;">蜀ICP备15029787号</span></a></p></div></div></div></div></div><div class="do-block     do-code do-ytms4"><div class="do-element-code"><div class="do-element-code-content"><style>
+.pad-12 > .do-panelcol{padding: 20px;}
+</style><script src="http://bk.st.styleweb.com.cn/main/js/utils/jquery.cookie.js?2015123015495"></script><script src="http://bk.st.styleweb.com.cn/main/js/utils/jquery.md5.js?2016116115525"></script><script src="http://static.geetest.com/static/tools/gt.js"></script><script src="http://bk.st.styleweb.com.cn/editor/js/newzhuziLogin.js?v201805071544"></script></div></div></div></div></div></div></div></div></div><!--底部在线客服 start--><!--
+<script>
+var _hmt = _hmt || [];
+(function() {
+ var hm = document.createElement("script");
+ hm.src = "https://hm.baidu.com/hm.js?732f366511b72866235ceff1bdcfeb67";
+ var s = document.getElementsByTagName("script")[0]; 
+ s.parentNode.insertBefore(hm, s);
+})();
+</script>
+--><div class="zz-kf animated"><div class="zz-kf-box"><i><svg viewbox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32"><path d="M460.177216 638.270868c-7.687076 19.940145-26.748201 34.189683-49.326429 34.189683-29.458939 0-53.277414-24.033369-53.277414-53.729715 0-29.631878 23.818475-53.665247 53.277414-53.665247 22.577205 0 41.639353 14.157441 49.326429 34.206056l-38.689161 19.461237L460.177216 638.270868 460.177216 638.270868zM708.623681 638.440737c-7.67889 20.017916-26.809599 34.236755-49.317219 34.236755-29.478382 0-53.29788-24.033369-53.29788-53.713342 0-29.640064 23.834848-53.682643 53.29788-53.682643 22.50762 0 41.638329 14.186094 49.317219 34.187637l-38.753629 19.495006L708.623681 638.440737 708.623681 638.440737zM926.932756 633.652687c-6.060019 22.847357-20.895913 40.98239-39.863916 51.839669-14.511505 11.704576-32.909527 18.753109-52.90493 18.753109-1.038656 0-2.056845-0.107447-3.03001-0.331551C799.289634 845.106634 683.025677 941.144944 531.506774 941.144944c-151.772682 0-268.013103-95.798856-300.036447-236.914828-16.046464-0.094144-31.036877-4.719488-43.797505-12.661368-25.106818-9.146311-45.574988-30.027897-52.992935-57.918108-10.000771-37.528732 3.666506-64.285119 21.120017-81.988316-0.334621-10.063193-0.400113-20.363793-0.199545-31.337729-2.294252-116.078739 32.107255-214.043934 99.454106-283.318694 32.108279-33.041534 71.166853-58.409294 115.921149-75.674517 6.948249-62.890352 74.714655-112.416326 157.031453-112.416326 82.305541 0 150.067854 49.525973 157.022243 112.416326 44.770669 17.265222 83.833337 42.632983 115.940592 75.674517 67.332525 69.27476 101.712543 167.440523 99.43978 283.874349 0.160659 8.604982 0.148379 17.187451-0.055259 25.63075C920.21782 564.016701 937.960926 592.283488 926.932756 633.652687L926.932756 633.652687zM528.006044 77.570703c-61.312414 0-112.782669 31.389918-125.930107 73.330122 38.253232-11.003612 80.07678-16.648169 124.850519-16.648169l2.174526 0c44.75225 0 86.575798 5.644557 124.83824 16.648169C640.800993 108.960621 589.322551 77.570703 528.006044 77.570703L528.006044 77.570703zM768.73985 268.829701c-56.662511-58.285474-139.53701-89.106434-239.638869-89.106434l0.245593 16.818037-1.140986 0.014326-0.261966-16.800641-1.055029-0.030699c-100.091626 0-182.948729 30.819936-239.61124 89.106434-58.736752 60.414975-88.666412 147.369396-86.557378 251.465219-0.031722 1.187035-0.031722 2.326998-0.050142 3.484358 21.305235-5.675256 37.151132 10.673084 39.445384 12.275581 79.82607-26.725688 114.664529-112.000863 115.02985-112.901373 2.930749-7.341199 11.157107-10.93505 18.47477-7.973602 7.286963 2.930749 10.837836 11.258415 7.937786 18.591427-1.641383 4.140297-38.938847 96.191806-128.783085 128.206964-1.13587 18.73162-2.208295 38.246069-2.007727 45.172829l0.316202 16.223496c0 170.332387 115.084085 289.11777 279.891641 289.11777 0.216941 0 0.855484 0 1.087774 0.01535 128.433114-0.01535 226.800469-72.641437 263.609817-185.629791-4.587482 5.429663-9.345856 10.719132-14.288424 15.815197-30.864962 31.922037-67.746964 56.744375-109.60121 73.777307-29.309536 11.919471-60.562331 19.808138-93.338828 23.610744-3.65525 14.628162-22.430872 25.800619-45.210691 25.800619-25.421996 0-46.039569-13.840216-46.039569-30.934546 0-17.072841 20.617573-30.93557 46.039569-30.93557 17.922185 0 33.351596 6.931876 40.938388 17.018605 101.634772-11.242042 183.66402-63.429635 233.107105-143.074579 2.712785-17.410532 4.122901-35.554774 4.122901-54.315046 0 0 0 0 0.068562-2.542916-0.468674-0.448208-0.908696-0.940418-1.309832-1.458211-38.46915-50.329269-94.935186-62.388932-154.695245-75.157747-29.77821-6.336312-60.592007-12.923334-90.663906-24.426319-108.981087-41.670052-166.832679-137.808646-169.240519-141.879358-4.022617-6.785543-1.809205-15.575744 4.907777-19.646456 6.765077-4.041036 15.47546-1.827625 19.49296 4.949732 0.554632 0.910743 55.456033 91.742471 154.925489 129.772622 28.021194 10.70276 57.738006 17.056468 86.47756 23.194258 54.939263 11.728112 111.49842 23.805172 154.8733 66.930365 0.440022-0.477884 0.908696-0.955768 1.425466-1.357927 0.827855-13.863752 1.657756-24.889877 2.400676-29.069059 0.075725-0.554632 0.197498-1.110287 0.316202-1.665942-0.271176-1.102101 4.895497-27.982308 34.952047-27.982308-0.016373-0.809435-0.030699-1.611707-0.045025-2.429329C857.399099 416.199097 827.464323 329.244676 768.73985 268.829701L768.73985 268.829701z" p-id="2547" fill="#ffffff"></path></svg></i><p><span>欢迎来到竹子建站，</span>请问有什么可以帮您？</p></div><div class="zz-btn-bar"><a href="http://p.qiao.baidu.com/cps/chatIndex?reqParam=%7B%22from%22%3A0%2C%22sid%22%3A%22-100%22%2C%22tid%22%3A%22-1%22%2C%22ttype%22%3A1%2C%22siteId%22%3A%2212877102%22%2C%22userId%22%3A%2226958486%22%2C%22pageId%22%3A0%7D" class="zz-btn gray zz-btn-close">立即咨询</a><a href="javascript:;" class="zz-btn gray zz-btn-close">稍后咨询</a></div></div><style type="text/css">
+	#kf5-support-btn{display: none!important}
+	.zz-kf{padding:12px;text-align: center;position: fixed;
+		left:0;
+		right: 0;
+		bottom: 0;
+		z-index: 99;
+		background-color:rgba(0,0,0,.6);
+		line-height: 36px;display: none
+	}
+	.zz-kf.open{opacity: 0;animation-name: fadeInUp;display: block;}
+	
+	.zz-kf i svg{vertical-align: middle;}
+	.zz-kf h3{font-size: 24px; font-weight: normal; color: #fff;line-height: 100%;display: inline-block;margin: 0;vertical-align:middle}
+	.zz-kf p{font-size: 16px;color: #fff;display: inline-block;margin: 0}
+	.zz-kf-box{float: left}
+	.zz-kf-box i{margin-right: 10px;position: relative;top: -2px;}
+	.zz-kf .zz-btn-bar{float: right}
+	.zz-kf .zz-btn{display: inline-block;padding: 10px 18px;line-height: 100%; border-radius: 5px;color: #fff;margin: 0 8px;font-size: 16px;}
+	.zz-kf .zz-btn.green{background-color:#00cb42}
+	.zz-kf .zz-btn.gray{background-color: #d8d8d8}
+	@media only screen and (max-width: 640px){
+		.zz-kf-box{margin-bottom: 10px}
+		.zz-kf-box,.zz-kf .zz-btn-bar{float: none;}
+		.zz-kf,.zz-btn-bar{text-align: center}
+		.zz-kf .zz-btn{padding: 8px 12px;}
+		.zz-kf p span{display: none}
+	}
+</style><script type="text/javascript">
+$(function(){
+	$.fn.extend({
+	 animateCss: function (animationName) {
+	 var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	 this.addClass('animated ' + animationName).one(animationEnd, function() {
+	 $(this).removeClass('animated ' + animationName);
+	 });
+	 return this;
+	 }
+	});
+
+	// 插入一个在线客服
+	$(".do-box-item.mail").after('<div class="do-box-item qq zz-btn-open"><a href="javascript:;" class="on"><i class="icon-bubbles"></i><span>在线客服</span></a></div>');
+
+
+	var zzKf = $(".zz-kf");
+	setTimeout(function(){
+		zzKf.addClass('open');
+	},5000);
+
+	$(".zz-btn-close").on("click",function(){
+		zzKf.hide();
+	});
+})
+</script><!--底部在线客服 end!--><!--弹窗 start!--><div class="weixinhao" id="xs"><img src="http://bk.image.styleweb.com.cn/2018/8/30/3917_jlgcy53s.png"><button id="gb">x
+ </button></div><style>
+ .weixinhao{height:300px;width:500px;box-shadow: 0px 15px 35.34px 2.66px rgba(20, 20, 20, 0.17);
+ position: fixed;display: block;left:calc(50% - 250px);top:calc(50% - 150px);z-index: 9999;
+ }
+ .weixinhao img{height:300px;width:500px;}
+ .weixinhao button{position:absolute;top:14px;right:24px;background-color:rgba(0,0,0,0);font-size:22px;color:white;z-index:10;}
+ .do-banner{z-index:1;}
+ 
+ @media only screen and (max-width: 640px){
+ .weixinhao{height:auto;width:300px; left: calc(50% - 150px);}
+ .weixinhao img{height:auto;width:300px;}
+ }
+</style><script>
+$("#gb").click(function(){
+$("#xs").hide();
+});
+</script><!--弹窗 end!--><script>
+var _hmt = _hmt || [];
+(function() {
+ var hm = document.createElement("script");
+ hm.src = "https://hm.baidu.com/hm.js?a8439b4fa4b46ae6d1cb7840806b342d";
+ var s = document.getElementsByTagName("script")[0]; 
+ s.parentNode.insertBefore(hm, s);
+})();
+</script><style>
+body .do-developers, .do-developers{color:#666!important;width:100%!important;height: 38px!important;}
+body .do-developers a, .do-developers a{color:#666!important;display: inline-block!important;}
+body .do-developers a:hover, .do-developers a:hover{color:#000!important;}
+body .do-developers, .do-developers{display: block!important; border-top:1px solid #ecebeb!important; background:#f3f3f3!important;padding:12px!important;text-align: center!important;font-size: 13px!important;line-height: 100%!important;opacity: 1!important;text-indent:0!important}
+body .do-developers i, .do-developers i{font-size:13px!important;vertical-align: middle;position: relative;top:-1px}
+body .do-developers *, .do-developers *{opacity: 1!important;text-indent:0!important;display: inline-block!important;}
+
+
+
+</style></div><script src="//bk.st.styleweb.com.cn/editor/js/??jquery.serializejson.min.js,layer/layer.js,waypoints/jquery.waypoints.min.js,jquery.scrollLoading-min.js,Validform_v5.3.2_min.js" merge="true" crossorigin=""></script><script src="//bk.st.styleweb.com.cn/editor/js/wow/wow.min.js?2018121713482" crossorigin=""></script><script src="//bk.st.styleweb.com.cn/editor/js/head.js?2018121713482" crossorigin=""></script><script src="//bk.st.styleweb.com.cn/editor/js/common.js?2018121713482" crossorigin=""></script><script src="..\zhuzi-statistic-35.js?path=http%3a%2f%2fwww.zhuzi.me%2fblog%2f_448776_152136.html&siteid=923&referer="></script><script type="text/javascript">
+
+$(function(){
+ 
+ 
+
+ var wow = new WOW({
+ animateClass: 'animated',
+ offset: 100,
+ callback:function(box) { }
+ });
+ wow.init();
+ 
+ if(isWeiXin() && bIsAndroid){
+ var fullArea = $(".do-area-fullHeight .do-row-one > .do-row, .do-slide-full");
+ fullArea.height($(window).height());
+ }
+
+ if(head.desktop){
+ if(!_vm.online) $("#do-online-service").prop("checked",true);
+ }else{
+ $("#do-online-service").prop("checked",false);
+ }
+
+ 
+ if(bIsAndroid){
+ $(".do-area-videobg").find("video").remove();
+ var vodbgObj = $(".do-area-videobg .do-area-bg-conter");
+ vodbgObj.each(function(){
+ $(this).css('background-image','url("'+$(this).data("vodbg")+'")');
+ });
+ }
+
+ 
+ var weixinBtn = $(".weixinBtn"),
+ popwximg = $(".do-popwximg");
+ if(weixinBtn.length){
+ weixinBtn.on("click",function(e){
+ popwximg.show();
+ });
+ popwximg.on("click",".do-close",function(){
+ popwximg.hide();
+ });
+ }
+
+ layer.config({
+ path: '\/\/bk.st.styleweb.com.cn\/editor/js/layer/',
+ extend: ['skin/style.css'], 
+ skin: 'layer-zhuzi' 
+ });
+ 
+
+});
+
+if(typeof _hmt == 'undefined'){
+ var _hmt = _hmt || [];
+ (function() {
+ var hm = document.createElement("script");
+ hm.src = "//hm.baidu.com/hm.js?03e4f2f8489d3cb343fc1c99966f477b";
+ var s = document.getElementsByTagName("script")[0];
+ s.parentNode.insertBefore(hm, s);
+ })();
+}
+</script></body></html>  

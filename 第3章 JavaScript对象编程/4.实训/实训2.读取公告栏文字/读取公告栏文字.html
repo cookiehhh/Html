@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>读取的公告栏文字</title>
+<script type="text/javascript">
+var i = 0; 
+	var TextInput =new Array();
+	TextInput[0] = "珠海，珠江口西岸的核心城市，经济特区，珠江三角洲南端的一个重要城市，位于广东省珠江口的西南部！"; 
+	TextInput[1] = "珠海生态环境优美，山水相间，陆岛相望，气候宜人，是全国唯一以整体城市景观入选“全国旅游胜地四十佳”的城市。"; 
+	TextInput[2] = "珠海与澳门的横琴新区启动项目---珠海十字门商务区，继标志性建筑物'海之珠'诞生后，其城市设计概念中标方案出炉，HOK国际（亚太公司）的规划方案拔得头筹。";
+	TextInput[3]= "珠海是一座具有浓郁代文化氛围的城市。从浪漫的休闲海滩，到欧式的午夜酒吧；从万头攒动的娱乐广场，到温馨宁静的文化馆站，珠海文化的内涵被放大，成为一种具有经济推力的'大文化'";
+function nextMessage() 
+{
+ 	if(i<TextInput.length)
+	{
+		document.getElementById("teletype").value=TextInput[i];
+		i++;
+	}
+	else
+	{
+		alert("已经是最后一条信息了！");
+	}
+		
+}
+window.onload=function(){
+	// 在文本框中显示“共有几条”
+	document.getElementById("textNum").value="共有"+TextInput.length;
+	nextMessage();
+}
+</script>
+</head>
+
+<body>
+<table width="420" cellpadding="0" cellspacing="0"> 
+<tr> 
+<td width="100%" colspan="3" valign="top"><div align="center"><textarea name="teletype" id="teletype" rows="3" cols="49" wrap="yes"></textarea> </td> 
+</tr> 
+<tr align="center"> 
+<td width="30%" bgcolor="#0000A0" valign="top"><input type="text" value="" sie="5" name="1" id="textNum"></td> 
+<td width="30%" bgcolor="#0000A0" valign="top"><input type="button" value="阅 读" onclick="nextMessage()"></td> 
+</tr> 
+</table>
+</body>
+</html>

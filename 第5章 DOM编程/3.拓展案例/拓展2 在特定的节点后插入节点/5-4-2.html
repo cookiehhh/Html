@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>insertAfter()方法</title>
+<script language="javascript">
+function insertAfter(newElement, targetElement){
+	var oParent = targetElement.parentNode;	//首先找到目标元素的父元素
+	if(oParent.lastChild == targetElement)	//如果目标元素已经是最后一个子元素了
+		oParent.appendChild(newElement);	//则直接用appendChild()加到子元素列表的最后
+	else								//否则用insertBefore()插入到目标元素的下一个兄弟元素之前
+		oParent.insertBefore(newElement,targetElement.nextSibling);
+}
+function insertP(){
+	var oOldP = document.getElementById("myTarget");
+	var oNewP = document.createElement("p");		//新建节点
+	var oText = document.createTextNode("这是一个感人肺腑的故事");
+	oNewP.appendChild(oText);
+	insertAfter(oNewP,oOldP);		//插入节点
+}
+</script>
+</head>
+<body onload="insertP()">
+	<p id="myTarget">插入到这行文字之后</p>
+	<p>也就是插入到这行文字之前，但这行没有id，也可能不存在</p>
+</body>
+</html>

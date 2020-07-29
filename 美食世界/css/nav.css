@@ -1,0 +1,41 @@
+/*导航*/
+.nav{
+    height:44px;
+    line-height:44px;
+    background-color: #f6a200;
+    width: 960px;
+    text-align: center;
+    margin: 0px auto;
+}
+.nav .nav_center{
+    text-align: center;
+    margin: 0px 75px;
+}
+.nav .nav_list li{
+    float: left;
+    list-style-type: none;
+}
+.nav .nav_list li a.nav_line{
+    font-size:16px;
+    color: #fff;
+    padding:0 20px;
+    display: block;
+    margin-right:20px;
+    position: relative;
+    text-decoration: none;
+}
+.nav .nav_list li a.nav_line:hover{
+    background-color: #e39500;
+}
+body{
+	background-color: #FAE8C8;
+}
+.copy{
+	font-size: 14px;
+	line-height: 50px;
+	clear: both;
+	height: 50px;
+	text-align: center;
+	margin: 50px 0px -10px 0px;
+	background-color: rgb(255,255,204);
+}

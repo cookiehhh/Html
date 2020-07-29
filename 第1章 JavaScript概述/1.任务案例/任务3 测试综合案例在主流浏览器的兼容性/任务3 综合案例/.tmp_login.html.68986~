@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>IT.home 会员中心</title>
+<link rel="stylesheet" type="text/css" href="css/login-reg.css" />
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<script src="js/jquery_1.7.2.js" type="text/javascript"></script>
+<script src="js/login.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="log-header">
+	<div id="log-header-content">
+		<img src="images/logo.png" style=" padding-top:5px; float:left;"> 
+        <div style="width:2px; height:30px; background-color:#DDD; float:left; margin-left:20px; margin-right:20px; margin-top:10px;"></div>
+        <div class="p1">会员中心</div>
+        <div style="float:right; width:80px; height:50px;"><a href="index.html"><img src="images/home-head-btn.png" style="border:none;"></a></div>
+    </div>
+    
+</div><!--header END--->
+<div id="log-main">
+	<div id="log-main-left">
+    	<div id="log-reg-border">
+        	<div id="log-reg-title">
+              <div class="log-title">登录</div>
+              <div class="reg-title">注册</div>            
+            </div>
+            <div id="log-border" class="display-block">
+            <div style=" background-image:url(images/log-title-point.png); width:410px; height:15px; border:none;"></div>
+            <form action="index.html">
+	            <div class="name"><span>登陆账号：</span>
+					<input name="username" type="text" value="" class="input-text">
+					<div style="display:none" class="login-prompt">请输入正确用户名</div>
+				</div>
+	            
+				<div class="name"><span>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：</span>
+					<input name="password" type="password" value="" class="input-text">
+					<div style="display:none" class="login-prompt">密码输入有误</div>
+				</div>
+	            
+				<div id="log-reg-btn">
+	              <div><input type="submit" value="" class="log-btn"></div>
+	            </div>
+            </form>
+            <div id="log-reg-alter"><img src="images/alter.png" /><span>未注册用户请点击<a href="#" class="reg-title-a">注册</a></span></div>
+            </div>
+            
+            
+            <div id="reg-border" class="display-none">
+            <div style="background-image:url(images/reg-title-point.png); width:410px; height:15px;"></div>
+            <form action="index.html">
+                  <div class="name"><span>登陆账号：</span>
+				  	<input name="rname" type="text" value="" class="input-text">
+                    <div style="display:none;" class="login-ok">&nbsp;</div>
+					<div style="display:none" class="login-prompt">请输入帐号</div>
+				  </div>
+                  
+				  <div class="name"><span>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：</span>
+				  	<input name="psw" type="password" value="" class="input-text">
+                    <div style="display:none;" class="login-ok">&nbsp;</div>
+					<div style="display:none" class="login-prompt">密码输入有误</div>
+				  </div>
+                  
+				  <div class="name"><span>确认密码：</span>
+				  	<input name="repsw" type="password" value="" class="input-text">
+                    <div style="display:none;" class="login-ok">&nbsp;</div>
+					<div style="display:none" class="login-prompt">密码输入不一致</div>
+				  </div>
+                  
+				  <div class="name"><span>手&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;机：</span>
+				  	<input name="phone" type="text" value="" class="input-text">
+                    <div style="display:none;" class="login-ok">&nbsp;</div>
+					<div style="display:none" class="login-prompt">手机格式有误</div>
+				  </div>
+                  
+				  <div class="name"><span>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：</span>
+				  	<input name="email" type="text" value="" class="input-text">
+                    <div style="display:none;" class="login-ok">&nbsp;</div>
+					<div style="display:none" class="login-prompt">输入格式有误</div>
+				  </div>
+                  
+				  <div class="name"><span>性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：</span>
+				  	<input name="sex" type="radio" value="" checked="checked" />男
+				  	<input name="sex" type="radio" value="" checked="checked" />女
+                    <div style="display:none;" class="login-ok">&nbsp;</div>
+					<div style="display:none" class="login-prompt">输入格式有误</div>
+				  </div>
+                  
+				  <div class="name"><span>出生日期：</span>
+				  	<input name="borndate" type="text" value="" class="input-text">
+                    <div style="display:none;" class="login-ok">&nbsp;</div>
+					<div style="display:none" class="login-prompt">输入格式有误</div>
+				  </div>
+                  
+				  <div id="log-reg-btn">
+                    <div><input type="submit" value="" class="reg-btn"></div>
+                  </div>
+            </form>
+            <div id="log-reg-alter"><img src="images/alter.png"><span>已经有帐号的用户请点击<a href="#" class="log-title-a">登录</a></span></div>
+            </div>
+        </div><!--log-reg-border END-->
+    </div><!--left END-->
+    <div id="log-main-right">
+    	<div id="left-title-point">
+        	<div class="point-round"></div>
+            <div class="point-vertical"></div>
+            <div class="point-round"></div>
+            <div class="point-vertical"></div>
+            <div class="point-round"></div>
+            <div class="point-vertical"></div>
+            <div class="point-round"></div>
+            <div class="point-vertical"></div>
+            <div class="point-round"></div>
+        </div>
+    	<div id="right-title-content" style="line-height:59px; padding-top:83px;">
+        	<p>>欢迎来到IThome！</p>
+            <p>>成为IThome一员，将会获得更多惊喜哦！</p>
+            <p>>还没有成为IThome一员，赶快注册啦！</p>
+            <p>>快来成为ithome一员吧！</p>
+            <p>>我们的世界是属于你的！</p>
+        </div>
+    </div><!--right END-->
+</div><!--log-main END-->
+<div id="log-reg-footer">
+	<div id="footer">
+    	<div class="hr"></div>
+          <div>
+            <p>
+                <a href="#">隐私条款</a>&nbsp;&nbsp;
+                <a href="#">使用帮助</a>&nbsp;&nbsp;
+                <a href="#">用户反馈</a>&nbsp;&nbsp;
+                <a href="#">加入我们</a>&nbsp;&nbsp;
+                <a href="#">友情链接</a>
+            </p>
+            <p>
+              Copyright © 2013  <a href="#">IT.Home</a> All rights reserved&nbsp;&nbsp;&nbsp;
+            </p>
+            <div>
+          </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

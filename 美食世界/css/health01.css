@@ -1,0 +1,19 @@
+.health01{
+	width: 960px;
+	margin: 10px auto;
+}
+.health01_img{
+	text-align: center;
+	margin: 10px auto;
+}
+.health01_cen{
+	font-size: 14px;
+	margin: 25px 150px;
+}
+p{
+	text-indent: 2em;
+}
+h2{
+	color: rgb(42,165,59);
+}
+

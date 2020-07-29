@@ -1,0 +1,39 @@
+h2{
+	text-align: center;
+}
+
+.food {
+	width: 960px;
+	margin: 10px auto;
+}
+
+.food .foodlist{
+    margin:0px;
+}
+.food .foodlist li{
+    float: left;
+    position: relative;
+    margin:10px 10px 10px 10px;
+    background-color: #fff;
+    list-style: none;
+}
+.food .foodlist li.hover,.food ul li:hover{
+    box-shadow: 0 0 30px rgba(0,0,0,.2);
+    transition: all 0.5s;
+}
+.fooddec{
+	width: 380px;
+	height: 100px;
+	color: #222222;
+    line-height:24px;
+    padding:10px 10px 16px 10px;
+    font-size:14px;
+}
+.fooddec p:valid{
+color: #FDFFCE;
+}
+
+a{
+	text-decoration: none;
+}
+

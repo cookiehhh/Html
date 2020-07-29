@@ -1,0 +1,33 @@
+h2{
+	text-align: center;
+}
+
+.video {
+	width: 960px;
+	margin: 10px auto;
+}
+
+.video .videolist{
+    margin:0 -10px  0px 0;
+}
+.video .videolist li{
+    float: left;
+    position: relative;
+    margin:10px 10px 10px 10px;
+    background-color: #fff;
+    list-style: none;
+}
+.video .videolist li.hover,.video ul li:hover{
+    box-shadow: 0 0 30px rgba(0,0,0,.2);
+    transition: all 0.5s;
+}
+.videodec{
+	color: #222222;
+	text-align: center;
+    line-height:0px;
+    padding:10px 10px 16px 10px;
+    font-size:22px;
+}
+a{
+	text-decoration: none;
+}

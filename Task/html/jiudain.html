@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>酒店预订</title>
+		<style type="text/css">
+			body{
+				color: #333;
+				font-size: 14px;
+				line-height: 1.5;
+				background-color: #fff;
+			}
+			#content{
+				margin: 0px auto;
+				width: 600px;
+				border: 1px solid red;
+			}
+			.tip{
+				background-color: #fefaf1;
+				border: solid 1px #fed698;
+				padding: 8px 8px 8px 32px;
+			}
+			label{
+				float: left;
+				width: 60px;
+				text-align: right;
+			}
+			input,select{
+				margin-right: 4px;
+				margin-left: 10px;
+				float: left;
+				width: 170px;
+			}
+			span{
+				float: left;
+				margin-right: 4px;
+			}
+			.order{
+				height: 26px;
+				margin: 7px 0;
+			}
+			.submit{
+				background-color: #f90;
+				display: inline-block;
+				border-radius: 3px;
+				color: #fff;
+				cursor: pointer;
+				font-weight: bold;
+				padding: 6px 22px;
+			}
+			input:focus,input:hover,select:focus,select:hover{
+				color: #000;
+				background: #E7F1F3;
+				border: 1px solid #888;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="content">
+			<div class="tip">
+				<p>
+					现在&nbsp;<a href="#">登录</a>&nbsp;即可预订可享酒店会员专属优惠，
+					并可直接使用常用预定信息
+				</p>
+			</div>
+			<div>
+				<form action="" method="post">
+					<div class="order">
+						<label>入离日期</label>
+						<input name="inDate" type="date" />
+						<span>至</span>
+						<input name="outDate" type="date" />
+					</div>
+					<div class="order">
+						<label>房间数量</label>
+						<input name="number" type="number" min="1" value="1" />
+						<span>房费</span>¥<strong>XXX</strong>
+					</div>
+					<div class="order">
+						<label>住客姓名</label>
+						<input name="name" type="text" value="住客（中文/英文）（必填）" />
+						<span>请填写实际入住人姓名</span>
+					</div>
+					<div class="order">
+						<label>联系手机</label>
+						<input name="phone" type="text" value="联系人手机号码（必填）" />
+						<span>预定成功后会向您发送短信通知</span>
+					</div>
+					<div class="order">
+						<label>邮箱</label>
+						<input name="email" type="email" value="（选填）" />
+						<span>接收确认邮件</span>
+					</div>
+					<div class="order">
+						<label>最晚抵店</label>
+						<select name="select" autofocus="off">
+							<option selected="selected" value="18:00">18:00</option>
+							<option value="19:00">19:00</option>
+							<option value="20:00">20:00</option>
+							<option value="21:00">21:00</option>
+							<option value="22:00">22:00</option>
+							<option value="23:00">23:00</option>
+							<option value="24:00">24:00</option>
+							<option value="次日6:00:">"次日6:00:"</option>
+						</select>
+						<span>该酒店14:00办理入住，早到可能需要等待。</span>
+					</div>
+					<div class="order">
+						<label>酒店前台</label>
+						<span>付款¥&nbsp;XXX</span>
+						<input name="submit" type="submit" value="提交订单"/>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
